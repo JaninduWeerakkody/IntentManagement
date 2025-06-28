@@ -2,7 +2,7 @@
 builder = "NIXPACKS"
 
 [deploy]
-startCommand = "dotnet /app/build/IntentManagementAPI.dll"
+startCommand = "dotnet out/IntentManagementAPI.dll"
 healthcheckPath = "/swagger"
 healthcheckTimeout = 300
 restartPolicyType = "ON_FAILURE"

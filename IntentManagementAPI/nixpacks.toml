@@ -2,10 +2,10 @@
 nixPkgs = ["dotnet-sdk_8"]
 
 [phases.install]
-cmds = ["dotnet restore IntentManagementAPI.csproj"]
+cmds = ["dotnet restore"]
 
 [phases.build]
-cmds = ["dotnet build IntentManagementAPI.csproj -c Release -o /app/build"]
+cmds = ["dotnet publish --no-restore -c Release -o out"]
 
 [start]
-cmd = "dotnet /app/build/IntentManagementAPI.dll" 
+cmd = "dotnet out/IntentManagementAPI.dll" 
