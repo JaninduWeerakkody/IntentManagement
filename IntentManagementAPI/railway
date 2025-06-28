@@ -1,0 +1,16 @@
+# Railway configuration for IntentManagementAPI
+# This file tells Railway how to build and run your .NET application
+
+# Use Nixpacks builder
+builder = "NIXPACKS"
+
+# Start command
+start = "dotnet /app/build/IntentManagementAPI.dll"
+
+# Health check
+healthcheck = "/swagger"
+
+# Environment variables
+[env]
+ASPNETCORE_ENVIRONMENT = "Production"
+ASPNETCORE_URLS = "http://0.0.0.0:8921" 

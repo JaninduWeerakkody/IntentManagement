@@ -18,8 +18,8 @@
 
 2. **Configure the Service**:
    - Railway will automatically detect it's a .NET project
-   - The `railway.toml` file will configure the deployment settings
-   - Railway will use the existing `Dockerfile` for building
+   - The `nixpacks.toml` file will configure the build process
+   - Railway will use Nixpacks to build your application
 
 3. **Set Environment Variables** (Optional):
    - Go to your project's "Variables" tab
@@ -57,10 +57,17 @@
 
 ## Configuration Details
 
+### Build Configuration
+- **Builder**: Nixpacks (configured in `nixpacks.toml`)
+- **.NET Version**: 8.0 SDK
+- **Build Process**: 
+  - `dotnet restore IntentManagementAPI.csproj`
+  - `dotnet build IntentManagementAPI.csproj -c Release -o /app/build`
+
 ### Port Configuration
 - The application is configured to run on port `8921`
 - Railway will automatically assign a public URL
-- The `railway.toml` file configures the correct port binding
+- The configuration files set the correct port binding
 
 ### Database
 - Currently using SQLite (`IntentManagementAPI.db`)
@@ -91,16 +98,31 @@ The following environment variables are automatically set:
 ### Common Issues
 
 1. **Build Failures**:
+   - ✅ **FIXED**: The `nixpacks.toml` file now properly specifies the project file
    - Check that all dependencies are properly specified in `.csproj`
-   - Ensure the Dockerfile is correctly configured
+   - Ensure the project file is in the root directory
 
 2. **Port Issues**:
-   - Verify the port in `railway.toml` matches your application
+   - Verify the port in configuration files matches your application
    - Check that Kestrel is configured to listen on `0.0.0.0:8921`
 
 3. **Database Issues**:
    - SQLite file will be created automatically
    - Ensure the application has write permissions
+
+### Recent Fixes Applied
+
+1. **Build Issue Resolution**:
+   - Created `nixpacks.toml` with proper .NET 8.0 SDK configuration
+   - Specified exact project file path in build commands
+   - Updated start command to use the correct build output path
+
+2. **Multiple Configuration Formats**:
+   - `railway.toml` - TOML format
+   - `railway.json` - JSON format  
+   - `railway.yaml` - YAML format
+   - `railway` - Simple format
+   - `.nixpacks` - Alternative Nixpacks format
 
 ### Updating Your Application
 
@@ -129,4 +151,15 @@ The following environment variables are automatically set:
 
 - Railway offers a free tier with limitations
 - Monitor your usage in the Railway dashboard
-- Consider upgrading if you exceed free tier limits 
+- Consider upgrading if you exceed free tier limits
+
+## Files Created for Railway Deployment
+
+- `nixpacks.toml` - Main build configuration
+- `railway.toml` - Railway deployment settings
+- `railway.json` - Alternative JSON configuration
+- `railway.yaml` - Alternative YAML configuration
+- `railway` - Simple configuration
+- `.nixpacks` - Alternative Nixpacks configuration
+- `.railwayignore` - Files to exclude from build
+- `appsettings.Production.json` - Production environment settings 
