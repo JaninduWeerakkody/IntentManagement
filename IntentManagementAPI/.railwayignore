@@ -13,7 +13,7 @@ node_modules/
 .gitignore
 README.md
 *.md
-Dockerfile
+Dockerfile*
 .dockerignore
 railway.toml
 nixpacks.toml
