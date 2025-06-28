@@ -1,0 +1,3016 @@
+{
+  "stats": {
+    "suites": 62,
+    "tests": 83,
+    "passes": 48,
+    "pending": 0,
+    "failures": 35,
+    "start": "2025-06-26T06:49:25.914Z",
+    "end": "2025-06-26T06:49:30.409Z",
+    "duration": 4495,
+    "testsRegistered": 83,
+    "passPercent": 57.831325301204814,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "260fbb32-15d5-448a-a8ba-b185fd1dd2c6",
+      "title": "",
+      "fullFile": "cypress/e2e/production/ctk.cy.js",
+      "file": "cypress/e2e/production/ctk.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e2e19294-3f3b-47f6-8989-76f53e64b898",
+          "title": "Tests method GET and path /intent/{intentId}/intentReport ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "d667511e-37a5-4d32-9cc9-aa6c86d4bbb8",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 41,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "644cbdee-413a-4d72-87a8-8e6e1cd47b33",
+                  "parentUUID": "d667511e-37a5-4d32-9cc9-aa6c86d4bbb8",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 15,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {},
+                  "uuid": "a65cf762-6fd2-4aae-8ed5-eb117ba703e3",
+                  "parentUUID": "d667511e-37a5-4d32-9cc9-aa6c86d4bbb8",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 14,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {},
+                  "uuid": "8e056f38-e65f-41d3-b8cd-78bda2e8bd80",
+                  "parentUUID": "d667511e-37a5-4d32-9cc9-aa6c86d4bbb8",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "644cbdee-413a-4d72-87a8-8e6e1cd47b33",
+                "a65cf762-6fd2-4aae-8ed5-eb117ba703e3",
+                "8e056f38-e65f-41d3-b8cd-78bda2e8bd80"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 70,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "7e9c7920-917b-4904-858b-c76ed9c25170",
+          "title": "Tests method GET and path /intent/{intentId}/intentReport/{id} ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "a54922c8-d102-4823-91ab-f45bb43670ff",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport/{id}  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "timedOut": null,
+                  "duration": 43,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {
+                    "message": "AssertionError: expected 404 to be one of [ 200 ]",
+                    "estack": "AssertionError: expected 404 to be one of [ 200 ]\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:44:30)",
+                    "diff": "- 404\n+ [ 200 ]\n"
+                  },
+                  "uuid": "c46a19a9-9e12-43c3-b570-23215afc2cbd",
+                  "parentUUID": "a54922c8-d102-4823-91ab-f45bb43670ff",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport/{id}  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "timedOut": null,
+                  "duration": 133,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error:  must have required property '@type'",
+                    "estack": "Error:  must have required property '@type'\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "250f0dc9-a5fe-4ed7-956a-886723b7f171",
+                  "parentUUID": "a54922c8-d102-4823-91ab-f45bb43670ff",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport/{id}  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "timedOut": null,
+                  "duration": 29,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {
+                    "message": "AssertionError: expected undefined to equal null",
+                    "estack": "AssertionError: expected undefined to equal null\n    at eval (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:10:38)\nat Array.forEach (<anonymous>)\n    at validateMandatoryAttr (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:4:15)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/e2e/production/ctk.cy.js:112:6)",
+                    "diff": null
+                  },
+                  "uuid": "1d22f156-5aac-4e18-8139-69bcede25da2",
+                  "parentUUID": "a54922c8-d102-4823-91ab-f45bb43670ff",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "c46a19a9-9e12-43c3-b570-23215afc2cbd",
+                "250f0dc9-a5fe-4ed7-956a-886723b7f171",
+                "1d22f156-5aac-4e18-8139-69bcede25da2"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 205,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "5578ab61-52d4-4366-b6eb-4f4156275809",
+          "title": "Tests method GET and path /intent/{intentId}/intentReport/{id} and ?fields=creationDate",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "80825be2-1c8e-44e4-8ff7-3f0e5624d16d",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - /{id}?fields=...&{filtering}",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport/{id} and ?fields=creationDate TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - /{id}?fields=...&{filtering} Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "timedOut": null,
+                  "duration": 30,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {
+                    "message": "AssertionError: expected 404 to be one of [ 200 ]",
+                    "estack": "AssertionError: expected 404 to be one of [ 200 ]\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:44:30)",
+                    "diff": "- 404\n+ [ 200 ]\n"
+                  },
+                  "uuid": "8223c90f-f4be-4fc7-be98-7c8f376f9d74",
+                  "parentUUID": "80825be2-1c8e-44e4-8ff7-3f0e5624d16d",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport/{id} and ?fields=creationDate TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - /{id}?fields=...&{filtering} Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "timedOut": null,
+                  "duration": 103,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error:  must have required property '@type'",
+                    "estack": "Error:  must have required property '@type'\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "204e63f6-0bed-40b9-be3f-4c3456930876",
+                  "parentUUID": "80825be2-1c8e-44e4-8ff7-3f0e5624d16d",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport/{id} and ?fields=creationDate TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - /{id}?fields=...&{filtering} Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "timedOut": null,
+                  "duration": 46,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {
+                    "message": "AssertionError: expected undefined to equal null",
+                    "estack": "AssertionError: expected undefined to equal null\n    at eval (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:10:38)\nat Array.forEach (<anonymous>)\n    at validateMandatoryAttr (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:4:15)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/e2e/production/ctk.cy.js:112:6)",
+                    "diff": null
+                  },
+                  "uuid": "163b132f-02a8-431b-b47e-21e67aae6dd2",
+                  "parentUUID": "80825be2-1c8e-44e4-8ff7-3f0e5624d16d",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "8223c90f-f4be-4fc7-be98-7c8f376f9d74",
+                "204e63f6-0bed-40b9-be3f-4c3456930876",
+                "163b132f-02a8-431b-b47e-21e67aae6dd2"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 179,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "b092224b-56a6-4d13-9e8a-d3bb7531e281",
+          "title": "Tests method GET and path /intent/{intentId}/intentReport and ?fields=creationDate",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "28ded29a-8cb8-458f-b081-6070c08bbe79",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - ?fields=...&{filtering}",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport and ?fields=creationDate TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - ?fields=...&{filtering} Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 45,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "5d976c55-7e52-4e2d-9e52-f1c3c376462c",
+                  "parentUUID": "28ded29a-8cb8-458f-b081-6070c08bbe79",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport and ?fields=creationDate TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - ?fields=...&{filtering} Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 30,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {},
+                  "uuid": "10ca8d50-b3ff-4b46-bf11-203636b54f1c",
+                  "parentUUID": "28ded29a-8cb8-458f-b081-6070c08bbe79",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport and ?fields=creationDate TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - ?fields=...&{filtering} Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 29,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {},
+                  "uuid": "105015e2-db17-4fd8-9156-f3b494dc67a4",
+                  "parentUUID": "28ded29a-8cb8-458f-b081-6070c08bbe79",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "5d976c55-7e52-4e2d-9e52-f1c3c376462c",
+                "10ca8d50-b3ff-4b46-bf11-203636b54f1c",
+                "105015e2-db17-4fd8-9156-f3b494dc67a4"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 104,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "46966017-84e5-4f37-8e3e-fda96f61edff",
+          "title": "Tests method GET and path /intent/{intentId}/intentReport and ?creationDate={creationDate}",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "581985ae-6bfb-4a40-9490-05124c7677be",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - and Filtering creationDate=",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport and ?creationDate={creationDate} TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - and Filtering creationDate= Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 24,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "d8e78649-03b5-4bc9-a0bc-a2579a29218d",
+                  "parentUUID": "581985ae-6bfb-4a40-9490-05124c7677be",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport and ?creationDate={creationDate} TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - and Filtering creationDate= Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 13,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {},
+                  "uuid": "31e8a793-fe08-4aa3-8cc0-691bbdb1e7cd",
+                  "parentUUID": "581985ae-6bfb-4a40-9490-05124c7677be",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport and ?creationDate={creationDate} TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - and Filtering creationDate= Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 17,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {},
+                  "uuid": "94ad7f9f-7564-4e6a-82a4-796a604571de",
+                  "parentUUID": "581985ae-6bfb-4a40-9490-05124c7677be",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "d8e78649-03b5-4bc9-a0bc-a2579a29218d",
+                "31e8a793-fe08-4aa3-8cc0-691bbdb1e7cd",
+                "94ad7f9f-7564-4e6a-82a4-796a604571de"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 54,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "e044ab5e-db6b-48bb-9ef7-df63bd4dbfea",
+          "title": "Tests method GET and path /intent/{intentId}/intentReport/{id} and ?fields=expression",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "8fc9db4b-755f-445e-9265-5d88d12c0507",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - /{id}?fields=...&{filtering}",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport/{id} and ?fields=expression TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - /{id}?fields=...&{filtering} Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "timedOut": null,
+                  "duration": 33,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {
+                    "message": "AssertionError: expected 404 to be one of [ 200 ]",
+                    "estack": "AssertionError: expected 404 to be one of [ 200 ]\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:44:30)",
+                    "diff": "- 404\n+ [ 200 ]\n"
+                  },
+                  "uuid": "d13af69a-2435-497d-9271-85f005033f4a",
+                  "parentUUID": "8fc9db4b-755f-445e-9265-5d88d12c0507",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport/{id} and ?fields=expression TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - /{id}?fields=...&{filtering} Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "timedOut": null,
+                  "duration": 87,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error:  must have required property '@type'",
+                    "estack": "Error:  must have required property '@type'\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "ff9f7641-452f-43fb-b7b9-4abd5c8692cd",
+                  "parentUUID": "8fc9db4b-755f-445e-9265-5d88d12c0507",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport/{id} and ?fields=expression TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - /{id}?fields=...&{filtering} Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "timedOut": null,
+                  "duration": 23,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {
+                    "message": "AssertionError: expected undefined to equal null",
+                    "estack": "AssertionError: expected undefined to equal null\n    at eval (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:10:38)\nat Array.forEach (<anonymous>)\n    at validateMandatoryAttr (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:4:15)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/e2e/production/ctk.cy.js:112:6)",
+                    "diff": null
+                  },
+                  "uuid": "b92af3b0-912b-4458-a7dd-e300639cf70e",
+                  "parentUUID": "8fc9db4b-755f-445e-9265-5d88d12c0507",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "d13af69a-2435-497d-9271-85f005033f4a",
+                "ff9f7641-452f-43fb-b7b9-4abd5c8692cd",
+                "b92af3b0-912b-4458-a7dd-e300639cf70e"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 143,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "e18894a9-999d-4339-872b-8bf9fa44c13f",
+          "title": "Tests method GET and path /intent/{intentId}/intentReport and ?fields=expression",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "9dfe5631-940e-4941-98e0-6b5aaf9c080c",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - ?fields=...&{filtering}",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport and ?fields=expression TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - ?fields=...&{filtering} Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 26,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "fb7665ee-4016-4e58-9307-f8db66d38f32",
+                  "parentUUID": "9dfe5631-940e-4941-98e0-6b5aaf9c080c",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport and ?fields=expression TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - ?fields=...&{filtering} Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 20,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {},
+                  "uuid": "12994e47-5dd8-4509-b555-46a0f246f896",
+                  "parentUUID": "9dfe5631-940e-4941-98e0-6b5aaf9c080c",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport and ?fields=expression TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - ?fields=...&{filtering} Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 18,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {},
+                  "uuid": "71c93820-7556-4d90-bc44-7619223dff6a",
+                  "parentUUID": "9dfe5631-940e-4941-98e0-6b5aaf9c080c",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "fb7665ee-4016-4e58-9307-f8db66d38f32",
+                "12994e47-5dd8-4509-b555-46a0f246f896",
+                "71c93820-7556-4d90-bc44-7619223dff6a"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 64,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "ca9cc508-2e13-45d4-a9b0-e9bec30c8984",
+          "title": "Tests method GET and path /intent/{intentId}/intentReport/{id} and ?fields=name",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "7c98650f-1a92-4017-b0b0-711ba54a953d",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - /{id}?fields=...&{filtering}",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport/{id} and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - /{id}?fields=...&{filtering} Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "timedOut": null,
+                  "duration": 27,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {
+                    "message": "AssertionError: expected 404 to be one of [ 200 ]",
+                    "estack": "AssertionError: expected 404 to be one of [ 200 ]\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:44:30)",
+                    "diff": "- 404\n+ [ 200 ]\n"
+                  },
+                  "uuid": "386c6232-d303-4650-a322-a05008c77cb3",
+                  "parentUUID": "7c98650f-1a92-4017-b0b0-711ba54a953d",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport/{id} and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - /{id}?fields=...&{filtering} Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "timedOut": null,
+                  "duration": 86,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error:  must have required property '@type'",
+                    "estack": "Error:  must have required property '@type'\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "6a51f986-f8f6-4c81-9b11-9f565a72ed99",
+                  "parentUUID": "7c98650f-1a92-4017-b0b0-711ba54a953d",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport/{id} and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - /{id}?fields=...&{filtering} Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "timedOut": null,
+                  "duration": 24,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {
+                    "message": "AssertionError: expected undefined to equal null",
+                    "estack": "AssertionError: expected undefined to equal null\n    at eval (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:10:38)\nat Array.forEach (<anonymous>)\n    at validateMandatoryAttr (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:4:15)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/e2e/production/ctk.cy.js:112:6)",
+                    "diff": null
+                  },
+                  "uuid": "826a60ca-5384-40cd-be0a-4d14b0264972",
+                  "parentUUID": "7c98650f-1a92-4017-b0b0-711ba54a953d",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "386c6232-d303-4650-a322-a05008c77cb3",
+                "6a51f986-f8f6-4c81-9b11-9f565a72ed99",
+                "826a60ca-5384-40cd-be0a-4d14b0264972"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 137,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "f0ac604f-f00e-4e47-93e3-f7648bdbb735",
+          "title": "Tests method GET and path /intent/{intentId}/intentReport and ?fields=name",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "e6cafdb6-5c7f-4643-bbc8-3e333408a26b",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - ?fields=...&{filtering}",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - ?fields=...&{filtering} Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 40,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "64530996-640c-4520-be55-d3388b2c001c",
+                  "parentUUID": "e6cafdb6-5c7f-4643-bbc8-3e333408a26b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - ?fields=...&{filtering} Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 19,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {},
+                  "uuid": "dc0cf8e1-ed16-49b1-b570-7a237cb61e80",
+                  "parentUUID": "e6cafdb6-5c7f-4643-bbc8-3e333408a26b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - ?fields=...&{filtering} Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 19,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {},
+                  "uuid": "a485e888-33bf-4194-bbc1-d8e335814066",
+                  "parentUUID": "e6cafdb6-5c7f-4643-bbc8-3e333408a26b",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "64530996-640c-4520-be55-d3388b2c001c",
+                "dc0cf8e1-ed16-49b1-b570-7a237cb61e80",
+                "a485e888-33bf-4194-bbc1-d8e335814066"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 78,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3ca081bc-525a-4ccd-9e14-2a3c2940e48d",
+          "title": "Tests method GET and path /intent/{intentId}/intentReport and ?name={name}",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "fc7c9571-62b2-4944-a656-4e5c88f7cfe9",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - and Filtering name=",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport and ?name={name} TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - and Filtering name= Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 26,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "0463c995-f369-48c4-b75e-3ffd3eb2970b",
+                  "parentUUID": "fc7c9571-62b2-4944-a656-4e5c88f7cfe9",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport and ?name={name} TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - and Filtering name= Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 21,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {},
+                  "uuid": "c3701129-9848-48a1-a8d8-0f9026bb186b",
+                  "parentUUID": "fc7c9571-62b2-4944-a656-4e5c88f7cfe9",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "fullTitle": "Tests method GET and path /intent/{intentId}/intentReport and ?name={name} TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentReport Resource - and Filtering name= Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport",
+                  "timedOut": null,
+                  "duration": 20,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {},
+                  "uuid": "35df51ec-0106-43a8-86db-ac9ef1ab8a09",
+                  "parentUUID": "fc7c9571-62b2-4944-a656-4e5c88f7cfe9",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "0463c995-f369-48c4-b75e-3ffd3eb2970b",
+                "c3701129-9848-48a1-a8d8-0f9026bb186b",
+                "35df51ec-0106-43a8-86db-ac9ef1ab8a09"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 67,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "edc2e5fd-5221-4ce7-b0ff-3da1b9d6ef96",
+          "title": "Tests method DELETE and path /intent/{intentId}/intentReport/{id} ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "65890a80-f38e-40d7-8bbc-518560a0a767",
+              "title": "TMF921 Conformance Profile v5.0.0 - API DELETE Operation Conformance - For IntentReport Resource",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "fullTitle": "Tests method DELETE and path /intent/{intentId}/intentReport/{id}  TMF921 Conformance Profile v5.0.0 - API DELETE Operation Conformance - For IntentReport Resource Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{intentId}/intentReport/{id}",
+                  "timedOut": null,
+                  "duration": 26,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "19ca1985-36f6-46ad-990e-cf67e2fa4dbe",
+                  "parentUUID": "65890a80-f38e-40d7-8bbc-518560a0a767",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "19ca1985-36f6-46ad-990e-cf67e2fa4dbe"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 26,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "a420aeba-5738-46f2-8f3a-d6fb6dda01ce",
+          "title": "Tests method POST and path /intentSpecification ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "0a3b6a8c-a28a-4e97-b694-7633ca70cc1e",
+              "title": "TMF921 Conformance Profile v5.0.0 - API POST Operation Conformance - For IntentSpecification Resource",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "fullTitle": "Tests method POST and path /intentSpecification  TMF921 Conformance Profile v5.0.0 - API POST Operation Conformance - For IntentSpecification Resource Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "timedOut": null,
+                  "duration": 28,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "725ec4f8-1753-4fe4-9c69-d14e1e498425",
+                  "parentUUID": "0a3b6a8c-a28a-4e97-b694-7633ca70cc1e",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "fullTitle": "Tests method POST and path /intentSpecification  TMF921 Conformance Profile v5.0.0 - API POST Operation Conformance - For IntentSpecification Resource Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "timedOut": null,
+                  "duration": 91,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error: /href must be string",
+                    "estack": "Error: /href must be string\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "76e8fbea-abd8-416f-a5e8-9b1ae41f5d14",
+                  "parentUUID": "0a3b6a8c-a28a-4e97-b694-7633ca70cc1e",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "725ec4f8-1753-4fe4-9c69-d14e1e498425"
+              ],
+              "failures": [
+                "76e8fbea-abd8-416f-a5e8-9b1ae41f5d14"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 119,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3566cc8d-cb7e-4d02-97ab-1ccb9effb6b6",
+          "title": "Tests method GET and path /intentSpecification ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "bd444bcb-f63c-4328-b3e0-4856102580b1",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "fullTitle": "Tests method GET and path /intentSpecification  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "timedOut": null,
+                  "duration": 29,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "ce5820fb-b032-4463-9a52-86f69ae6a6e9",
+                  "parentUUID": "bd444bcb-f63c-4328-b3e0-4856102580b1",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "fullTitle": "Tests method GET and path /intentSpecification  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "timedOut": null,
+                  "duration": 89,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error: /href must be string",
+                    "estack": "Error: /href must be string\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "256e257d-89fb-445f-b4d9-8f276d70fcc4",
+                  "parentUUID": "bd444bcb-f63c-4328-b3e0-4856102580b1",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "fullTitle": "Tests method GET and path /intentSpecification  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "timedOut": null,
+                  "duration": 55,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {},
+                  "uuid": "b1b56fd3-3ebb-4b02-a1ab-bc1e06fb5e4f",
+                  "parentUUID": "bd444bcb-f63c-4328-b3e0-4856102580b1",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "ce5820fb-b032-4463-9a52-86f69ae6a6e9",
+                "b1b56fd3-3ebb-4b02-a1ab-bc1e06fb5e4f"
+              ],
+              "failures": [
+                "256e257d-89fb-445f-b4d9-8f276d70fcc4"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 173,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "2fbb7429-9fd8-4aee-ac56-d3ad6cb69607",
+          "title": "Tests method GET and path /intentSpecification/{id} ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "da7b7d54-a4eb-4748-ae99-c66ee096bab9",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "fullTitle": "Tests method GET and path /intentSpecification/{id}  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "timedOut": null,
+                  "duration": 41,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "20e0c5c6-4257-49c7-b22f-13b8079f1476",
+                  "parentUUID": "da7b7d54-a4eb-4748-ae99-c66ee096bab9",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "fullTitle": "Tests method GET and path /intentSpecification/{id}  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "timedOut": null,
+                  "duration": 114,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error: /href must be string",
+                    "estack": "Error: /href must be string\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "a34e0fad-fca2-485d-9094-391d3f3b9954",
+                  "parentUUID": "da7b7d54-a4eb-4748-ae99-c66ee096bab9",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "fullTitle": "Tests method GET and path /intentSpecification/{id}  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "timedOut": null,
+                  "duration": 40,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {},
+                  "uuid": "9bd127cf-4da8-4369-9da4-eed14e9b586a",
+                  "parentUUID": "da7b7d54-a4eb-4748-ae99-c66ee096bab9",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "20e0c5c6-4257-49c7-b22f-13b8079f1476",
+                "9bd127cf-4da8-4369-9da4-eed14e9b586a"
+              ],
+              "failures": [
+                "a34e0fad-fca2-485d-9094-391d3f3b9954"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 195,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "ed511d0c-5a2b-41ce-a72c-b195e6669587",
+          "title": "Tests method GET and path /intentSpecification/{id} and ?fields=name",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "2be2ccf7-d112-41e5-8b4c-965859167d9f",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource - /{id}?fields=...&{filtering}",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "fullTitle": "Tests method GET and path /intentSpecification/{id} and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource - /{id}?fields=...&{filtering} Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "timedOut": null,
+                  "duration": 30,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "b0a5c6e6-f496-4d02-b10a-aa74fa41822a",
+                  "parentUUID": "2be2ccf7-d112-41e5-8b4c-965859167d9f",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "fullTitle": "Tests method GET and path /intentSpecification/{id} and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource - /{id}?fields=...&{filtering} Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "timedOut": null,
+                  "duration": 93,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error: /href must be string",
+                    "estack": "Error: /href must be string\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "c1e5958c-5c59-412b-802c-337ec78cc3e3",
+                  "parentUUID": "2be2ccf7-d112-41e5-8b4c-965859167d9f",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "fullTitle": "Tests method GET and path /intentSpecification/{id} and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource - /{id}?fields=...&{filtering} Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "timedOut": null,
+                  "duration": 27,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {},
+                  "uuid": "80df5caf-92f3-4145-9c9a-f25ddfda086d",
+                  "parentUUID": "2be2ccf7-d112-41e5-8b4c-965859167d9f",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "b0a5c6e6-f496-4d02-b10a-aa74fa41822a",
+                "80df5caf-92f3-4145-9c9a-f25ddfda086d"
+              ],
+              "failures": [
+                "c1e5958c-5c59-412b-802c-337ec78cc3e3"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 150,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "f0141f7f-1fd2-4007-b2f1-e77a7a13b8d0",
+          "title": "Tests method GET and path /intentSpecification and ?fields=name",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "8c5bc66a-d5be-4b79-81af-7ea2caaf65bb",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource - ?fields=...&{filtering}",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "fullTitle": "Tests method GET and path /intentSpecification and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource - ?fields=...&{filtering} Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "timedOut": null,
+                  "duration": 25,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "e956007b-8578-4281-b83d-3b634536472b",
+                  "parentUUID": "8c5bc66a-d5be-4b79-81af-7ea2caaf65bb",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "fullTitle": "Tests method GET and path /intentSpecification and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource - ?fields=...&{filtering} Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "timedOut": null,
+                  "duration": 93,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error: /href must be string",
+                    "estack": "Error: /href must be string\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "5a99e3c4-6e5f-4359-8728-4c2f7478f1b2",
+                  "parentUUID": "8c5bc66a-d5be-4b79-81af-7ea2caaf65bb",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "fullTitle": "Tests method GET and path /intentSpecification and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource - ?fields=...&{filtering} Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "timedOut": null,
+                  "duration": 27,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {},
+                  "uuid": "e27569b6-0b4b-43b9-8a03-06ec59e61b86",
+                  "parentUUID": "8c5bc66a-d5be-4b79-81af-7ea2caaf65bb",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "e956007b-8578-4281-b83d-3b634536472b",
+                "e27569b6-0b4b-43b9-8a03-06ec59e61b86"
+              ],
+              "failures": [
+                "5a99e3c4-6e5f-4359-8728-4c2f7478f1b2"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 145,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "e6a35cfd-cbc9-4c91-8432-4b9f35cb2937",
+          "title": "Tests method GET and path /intentSpecification and ?name={name}",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "b46bd3d8-2ad9-44e0-8b87-ecd666b5fec6",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource - and Filtering name=",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "fullTitle": "Tests method GET and path /intentSpecification and ?name={name} TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource - and Filtering name= Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "timedOut": null,
+                  "duration": 27,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "1466ba71-6bce-4fce-b3ce-4ff5f3a2af2c",
+                  "parentUUID": "b46bd3d8-2ad9-44e0-8b87-ecd666b5fec6",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "fullTitle": "Tests method GET and path /intentSpecification and ?name={name} TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource - and Filtering name= Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "timedOut": null,
+                  "duration": 90,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error: /href must be string",
+                    "estack": "Error: /href must be string\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "417de129-338d-4131-a804-b12e36f6fa92",
+                  "parentUUID": "b46bd3d8-2ad9-44e0-8b87-ecd666b5fec6",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "fullTitle": "Tests method GET and path /intentSpecification and ?name={name} TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource - and Filtering name= Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification",
+                  "timedOut": null,
+                  "duration": 25,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {},
+                  "uuid": "1682596f-0561-49ea-a6d0-413087ec5c7e",
+                  "parentUUID": "b46bd3d8-2ad9-44e0-8b87-ecd666b5fec6",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "1466ba71-6bce-4fce-b3ce-4ff5f3a2af2c",
+                "1682596f-0561-49ea-a6d0-413087ec5c7e"
+              ],
+              "failures": [
+                "417de129-338d-4131-a804-b12e36f6fa92"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 142,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "07253ada-51e4-4048-841c-f35288594856",
+          "title": "Tests method PATCH and path /intentSpecification/{id} ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "27a2abb9-a5f1-4ac3-9ec1-34e045257c49",
+              "title": "TMF921 Conformance Profile v5.0.0 - API PATCH Operation Conformance - For IntentSpecification Resource",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "fullTitle": "Tests method PATCH and path /intentSpecification/{id}  TMF921 Conformance Profile v5.0.0 - API PATCH Operation Conformance - For IntentSpecification Resource Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "timedOut": null,
+                  "duration": 32,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "83cbd9f5-d1e3-4ce8-a5e7-bc6d7e041951",
+                  "parentUUID": "27a2abb9-a5f1-4ac3-9ec1-34e045257c49",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "fullTitle": "Tests method PATCH and path /intentSpecification/{id}  TMF921 Conformance Profile v5.0.0 - API PATCH Operation Conformance - For IntentSpecification Resource Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "timedOut": null,
+                  "duration": 91,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error: /href must be string",
+                    "estack": "Error: /href must be string\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "47200f04-1ab7-40e6-9ef2-24026eb5ae87",
+                  "parentUUID": "27a2abb9-a5f1-4ac3-9ec1-34e045257c49",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "83cbd9f5-d1e3-4ce8-a5e7-bc6d7e041951"
+              ],
+              "failures": [
+                "47200f04-1ab7-40e6-9ef2-24026eb5ae87"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 123,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "691cab71-59dd-48c1-b5c5-089e9a6f3460",
+          "title": "Tests method GET and path /intentSpecification/{id} ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "7946c423-0ef6-4694-ae58-c096a2df921b",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "fullTitle": "Tests method GET and path /intentSpecification/{id}  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "timedOut": null,
+                  "duration": 28,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "8574d3ef-c64a-4c11-a718-1e78d1d1f1f2",
+                  "parentUUID": "7946c423-0ef6-4694-ae58-c096a2df921b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "fullTitle": "Tests method GET and path /intentSpecification/{id}  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "timedOut": null,
+                  "duration": 93,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error: /href must be string",
+                    "estack": "Error: /href must be string\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "7fa7998d-11d4-4324-acae-4b5836fa6ecd",
+                  "parentUUID": "7946c423-0ef6-4694-ae58-c096a2df921b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "fullTitle": "Tests method GET and path /intentSpecification/{id}  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For IntentSpecification Resource Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "timedOut": null,
+                  "duration": 39,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {},
+                  "uuid": "961013fd-99fa-4240-b401-11a0afeef864",
+                  "parentUUID": "7946c423-0ef6-4694-ae58-c096a2df921b",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "8574d3ef-c64a-4c11-a718-1e78d1d1f1f2",
+                "961013fd-99fa-4240-b401-11a0afeef864"
+              ],
+              "failures": [
+                "7fa7998d-11d4-4324-acae-4b5836fa6ecd"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 160,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "e6b09816-7997-4ae3-83b1-75d563f862c6",
+          "title": "Tests method DELETE and path /intentSpecification/{id} ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "a7c2044e-3d67-4004-bd41-fbf802a303a2",
+              "title": "TMF921 Conformance Profile v5.0.0 - API DELETE Operation Conformance - For IntentSpecification Resource",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "fullTitle": "Tests method DELETE and path /intentSpecification/{id}  TMF921 Conformance Profile v5.0.0 - API DELETE Operation Conformance - For IntentSpecification Resource Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intentSpecification/{id}",
+                  "timedOut": null,
+                  "duration": 35,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "1f67f4c4-c24a-4715-843f-60189ad20545",
+                  "parentUUID": "a7c2044e-3d67-4004-bd41-fbf802a303a2",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "1f67f4c4-c24a-4715-843f-60189ad20545"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 35,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "4b658eba-34f6-48fe-9412-a56d6c46a1d6",
+          "title": "Tests method POST and path /intent ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "36852bae-e71b-4114-8467-d12d78e01885",
+              "title": "TMF921 Conformance Profile v5.0.0 - API POST Operation Conformance - For Intent Resource",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "fullTitle": "Tests method POST and path /intent  TMF921 Conformance Profile v5.0.0 - API POST Operation Conformance - For Intent Resource Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "timedOut": null,
+                  "duration": 32,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "b3d900e4-1e91-4095-a4c6-d24ea948329e",
+                  "parentUUID": "36852bae-e71b-4114-8467-d12d78e01885",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "fullTitle": "Tests method POST and path /intent  TMF921 Conformance Profile v5.0.0 - API POST Operation Conformance - For Intent Resource Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "timedOut": null,
+                  "duration": 87,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error: /href must be string",
+                    "estack": "Error: /href must be string\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "15f07fe7-71b3-4351-aac5-9b8adb9caa06",
+                  "parentUUID": "36852bae-e71b-4114-8467-d12d78e01885",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "b3d900e4-1e91-4095-a4c6-d24ea948329e"
+              ],
+              "failures": [
+                "15f07fe7-71b3-4351-aac5-9b8adb9caa06"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 119,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "991f0989-e10b-41ba-b8ae-cd89586d93cb",
+          "title": "Tests method GET and path /intent ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "1cfafe18-c7f7-4362-b38a-b1e728de2337",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "fullTitle": "Tests method GET and path /intent  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "timedOut": null,
+                  "duration": 35,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "f74f0de8-8be7-4f1a-a358-eeba917f913a",
+                  "parentUUID": "1cfafe18-c7f7-4362-b38a-b1e728de2337",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "fullTitle": "Tests method GET and path /intent  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "timedOut": null,
+                  "duration": 83,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error: /href must be string",
+                    "estack": "Error: /href must be string\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "cbbb3283-3a8e-4e6b-a906-f393d34b66f3",
+                  "parentUUID": "1cfafe18-c7f7-4362-b38a-b1e728de2337",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "fullTitle": "Tests method GET and path /intent  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "timedOut": null,
+                  "duration": 30,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {
+                    "message": "AssertionError: expected null to deeply equal undefined",
+                    "estack": "AssertionError: expected null to deeply equal undefined\n    at eval (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:6:43)\nat Array.forEach (<anonymous>)\n    at validateMandatoryAttr (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:4:15)\n    at eval (webpack://oas_ctk_gen/./cypress/e2e/production/ctk.cy.js:98:8)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/e2e/production/ctk.cy.js:94:20)",
+                    "diff": null
+                  },
+                  "uuid": "bb8d99ec-4c3d-4a5a-ac25-48da91dad14f",
+                  "parentUUID": "1cfafe18-c7f7-4362-b38a-b1e728de2337",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "f74f0de8-8be7-4f1a-a358-eeba917f913a"
+              ],
+              "failures": [
+                "cbbb3283-3a8e-4e6b-a906-f393d34b66f3",
+                "bb8d99ec-4c3d-4a5a-ac25-48da91dad14f"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 148,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "c089a325-abcb-41c8-a610-691b97b7805b",
+          "title": "Tests method GET and path /intent/{id} ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "5f1365d8-6be6-4718-a1e9-375fb95c943e",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{id}  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "timedOut": null,
+                  "duration": 63,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "0dcf83e0-41d7-4a47-b4ff-7e50a46b020a",
+                  "parentUUID": "5f1365d8-6be6-4718-a1e9-375fb95c943e",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{id}  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "timedOut": null,
+                  "duration": 89,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error: /href must be string",
+                    "estack": "Error: /href must be string\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "ede796fe-0470-48fa-a347-47e7e503508a",
+                  "parentUUID": "5f1365d8-6be6-4718-a1e9-375fb95c943e",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{id}  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "timedOut": null,
+                  "duration": 32,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {
+                    "message": "AssertionError: expected null to deeply equal undefined",
+                    "estack": "AssertionError: expected null to deeply equal undefined\n    at eval (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:6:43)\nat Array.forEach (<anonymous>)\n    at validateMandatoryAttr (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:4:15)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/e2e/production/ctk.cy.js:112:6)",
+                    "diff": null
+                  },
+                  "uuid": "80f0a034-82e4-414d-b029-c3bf455881a8",
+                  "parentUUID": "5f1365d8-6be6-4718-a1e9-375fb95c943e",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "0dcf83e0-41d7-4a47-b4ff-7e50a46b020a"
+              ],
+              "failures": [
+                "ede796fe-0470-48fa-a347-47e7e503508a",
+                "80f0a034-82e4-414d-b029-c3bf455881a8"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 184,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "dff8b503-3afb-4e99-b3c4-5f1cc9ac4d68",
+          "title": "Tests method GET and path /intent/{id} and ?fields=expression",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "8acbcb22-f5b6-4143-903c-f91f6a3c2e50",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - /{id}?fields=...&{filtering}",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{id} and ?fields=expression TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - /{id}?fields=...&{filtering} Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "timedOut": null,
+                  "duration": 35,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "e746a540-9b48-443e-93ff-686d0b42d6fe",
+                  "parentUUID": "8acbcb22-f5b6-4143-903c-f91f6a3c2e50",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{id} and ?fields=expression TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - /{id}?fields=...&{filtering} Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "timedOut": null,
+                  "duration": 87,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error:  must have required property '@type'",
+                    "estack": "Error:  must have required property '@type'\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "ce96db01-b5b0-4335-ac75-c78c6f63d68e",
+                  "parentUUID": "8acbcb22-f5b6-4143-903c-f91f6a3c2e50",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{id} and ?fields=expression TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - /{id}?fields=...&{filtering} Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "timedOut": null,
+                  "duration": 29,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {
+                    "message": "AssertionError: expected null to deeply equal undefined",
+                    "estack": "AssertionError: expected null to deeply equal undefined\n    at eval (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:6:43)\nat Array.forEach (<anonymous>)\n    at validateMandatoryAttr (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:4:15)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/e2e/production/ctk.cy.js:112:6)",
+                    "diff": null
+                  },
+                  "uuid": "8e09ba1f-fe48-4634-9044-8e63be8dc0f4",
+                  "parentUUID": "8acbcb22-f5b6-4143-903c-f91f6a3c2e50",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "e746a540-9b48-443e-93ff-686d0b42d6fe"
+              ],
+              "failures": [
+                "ce96db01-b5b0-4335-ac75-c78c6f63d68e",
+                "8e09ba1f-fe48-4634-9044-8e63be8dc0f4"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 151,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "2f1a344a-f2b4-4d92-a960-8ca64edc6343",
+          "title": "Tests method GET and path /intent and ?fields=expression",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "dea7a095-ec28-4676-b5c0-210587d85c03",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - ?fields=...&{filtering}",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "fullTitle": "Tests method GET and path /intent and ?fields=expression TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - ?fields=...&{filtering} Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "timedOut": null,
+                  "duration": 47,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "c3f27fbc-1f8a-41d3-9b4a-301ecaa7930f",
+                  "parentUUID": "dea7a095-ec28-4676-b5c0-210587d85c03",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "fullTitle": "Tests method GET and path /intent and ?fields=expression TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - ?fields=...&{filtering} Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "timedOut": null,
+                  "duration": 112,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error:  must have required property '@type'",
+                    "estack": "Error:  must have required property '@type'\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "e6a33b20-54bc-4292-bab6-63630cdd6aa7",
+                  "parentUUID": "dea7a095-ec28-4676-b5c0-210587d85c03",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "fullTitle": "Tests method GET and path /intent and ?fields=expression TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - ?fields=...&{filtering} Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "timedOut": null,
+                  "duration": 27,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {},
+                  "uuid": "44bb07df-9a3b-4b59-be0e-b8d43bc9d5c5",
+                  "parentUUID": "dea7a095-ec28-4676-b5c0-210587d85c03",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "c3f27fbc-1f8a-41d3-9b4a-301ecaa7930f",
+                "44bb07df-9a3b-4b59-be0e-b8d43bc9d5c5"
+              ],
+              "failures": [
+                "e6a33b20-54bc-4292-bab6-63630cdd6aa7"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 186,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "a42f139a-3c64-4360-833c-5ffcc9c7a717",
+          "title": "Tests method GET and path /intent/{id} and ?fields=name",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "d189199b-44c5-403f-9875-18fd164de3c1",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - /{id}?fields=...&{filtering}",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{id} and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - /{id}?fields=...&{filtering} Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "timedOut": null,
+                  "duration": 30,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "2db078df-f96c-43d0-bd0d-6d66832f5244",
+                  "parentUUID": "d189199b-44c5-403f-9875-18fd164de3c1",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{id} and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - /{id}?fields=...&{filtering} Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "timedOut": null,
+                  "duration": 118,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error:  must have required property '@type'",
+                    "estack": "Error:  must have required property '@type'\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "7b643333-819b-4c00-b44e-b8b068e2f351",
+                  "parentUUID": "d189199b-44c5-403f-9875-18fd164de3c1",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{id} and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - /{id}?fields=...&{filtering} Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "timedOut": null,
+                  "duration": 54,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {
+                    "message": "AssertionError: expected undefined to equal 'Intent'",
+                    "estack": "AssertionError: expected undefined to equal 'Intent'\n    at eval (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:10:38)\nat Array.forEach (<anonymous>)\n    at validateMandatoryAttr (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:4:15)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/e2e/production/ctk.cy.js:112:6)",
+                    "diff": null
+                  },
+                  "uuid": "7e1bb010-06e8-4f47-bd2e-74085db2b8ed",
+                  "parentUUID": "d189199b-44c5-403f-9875-18fd164de3c1",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "2db078df-f96c-43d0-bd0d-6d66832f5244"
+              ],
+              "failures": [
+                "7b643333-819b-4c00-b44e-b8b068e2f351",
+                "7e1bb010-06e8-4f47-bd2e-74085db2b8ed"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 202,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "e1b86bfc-2359-4bda-93f9-9ce325012aff",
+          "title": "Tests method GET and path /intent and ?fields=name",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "b156a190-57c6-4ea4-9e80-4dfb64aec837",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - ?fields=...&{filtering}",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "fullTitle": "Tests method GET and path /intent and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - ?fields=...&{filtering} Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "timedOut": null,
+                  "duration": 62,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "bb936485-e8fc-4bef-981f-b4989a7a6f8c",
+                  "parentUUID": "b156a190-57c6-4ea4-9e80-4dfb64aec837",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "fullTitle": "Tests method GET and path /intent and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - ?fields=...&{filtering} Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "timedOut": null,
+                  "duration": 105,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error:  must have required property '@type'",
+                    "estack": "Error:  must have required property '@type'\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "0baa6b31-6e03-4c9d-a665-0671a8b2e597",
+                  "parentUUID": "b156a190-57c6-4ea4-9e80-4dfb64aec837",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "fullTitle": "Tests method GET and path /intent and ?fields=name TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - ?fields=...&{filtering} Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "timedOut": null,
+                  "duration": 37,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {},
+                  "uuid": "9a8bb4ae-c83b-4f6e-a55f-d0822a03cbc9",
+                  "parentUUID": "b156a190-57c6-4ea4-9e80-4dfb64aec837",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "bb936485-e8fc-4bef-981f-b4989a7a6f8c",
+                "9a8bb4ae-c83b-4f6e-a55f-d0822a03cbc9"
+              ],
+              "failures": [
+                "0baa6b31-6e03-4c9d-a665-0671a8b2e597"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 204,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "0bd4088c-f158-49ae-9987-c9427e53de93",
+          "title": "Tests method GET and path /intent and ?name={name}",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "c5d0be71-5ae4-427c-8311-f9c865b4f54d",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - and Filtering name=",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "fullTitle": "Tests method GET and path /intent and ?name={name} TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - and Filtering name= Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "timedOut": null,
+                  "duration": 42,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "f8192c57-6e45-4be2-97c0-7f9825378f1f",
+                  "parentUUID": "c5d0be71-5ae4-427c-8311-f9c865b4f54d",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "fullTitle": "Tests method GET and path /intent and ?name={name} TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - and Filtering name= Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "timedOut": null,
+                  "duration": 94,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error: /href must be string",
+                    "estack": "Error: /href must be string\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "5633d378-daca-4c5c-ae2e-ebf81c6cd907",
+                  "parentUUID": "c5d0be71-5ae4-427c-8311-f9c865b4f54d",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "fullTitle": "Tests method GET and path /intent and ?name={name} TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource - and Filtering name= Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent",
+                  "timedOut": null,
+                  "duration": 39,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {},
+                  "uuid": "b00af0ad-4357-4861-a9c5-3a340e329ecc",
+                  "parentUUID": "c5d0be71-5ae4-427c-8311-f9c865b4f54d",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "f8192c57-6e45-4be2-97c0-7f9825378f1f",
+                "b00af0ad-4357-4861-a9c5-3a340e329ecc"
+              ],
+              "failures": [
+                "5633d378-daca-4c5c-ae2e-ebf81c6cd907"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 175,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "ccef4c9c-b236-4a8e-aaad-978d253ea025",
+          "title": "Tests method PATCH and path /intent/{id} ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "3b08bfe7-cc7e-4544-846a-235bb74a2e7d",
+              "title": "TMF921 Conformance Profile v5.0.0 - API PATCH Operation Conformance - For Intent Resource",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "fullTitle": "Tests method PATCH and path /intent/{id}  TMF921 Conformance Profile v5.0.0 - API PATCH Operation Conformance - For Intent Resource Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "timedOut": null,
+                  "duration": 46,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "904d85d1-d9e9-43e4-b9f5-26065030766a",
+                  "parentUUID": "3b08bfe7-cc7e-4544-846a-235bb74a2e7d",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "fullTitle": "Tests method PATCH and path /intent/{id}  TMF921 Conformance Profile v5.0.0 - API PATCH Operation Conformance - For Intent Resource Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "timedOut": null,
+                  "duration": 90,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error: /href must be string",
+                    "estack": "Error: /href must be string\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "e6283724-d09a-4eb7-9f2d-8f30bde08bff",
+                  "parentUUID": "3b08bfe7-cc7e-4544-846a-235bb74a2e7d",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "904d85d1-d9e9-43e4-b9f5-26065030766a"
+              ],
+              "failures": [
+                "e6283724-d09a-4eb7-9f2d-8f30bde08bff"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 136,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "1065fafb-1264-48ca-842e-3c80c4decaff",
+          "title": "Tests method GET and path /intent/{id} ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "3b62f11b-148b-46a6-a5d4-eea979746f83",
+              "title": "TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{id}  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "timedOut": null,
+                  "duration": 35,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "82cb7c7a-8539-43e5-bbda-364b81b92398",
+                  "parentUUID": "3b62f11b-148b-46a6-a5d4-eea979746f83",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{id}  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource Test schema \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "timedOut": null,
+                  "duration": 128,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    cy.validateSchema(instance, yamlOas, schemaRef);\n  });\n} else {\n  cy.validateSchema(response.body, yamlOas, schemaRef);\n}",
+                  "err": {
+                    "message": "Error: /href must be string",
+                    "estack": "Error: /href must be string\n    at eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:34:10)\n    at Array.forEach (<anonymous>)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/support/commands/validate.js:32:18)",
+                    "diff": null
+                  },
+                  "uuid": "84667617-874a-4661-9018-7fac6fa13a22",
+                  "parentUUID": "3b62f11b-148b-46a6-a5d4-eea979746f83",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "fullTitle": "Tests method GET and path /intent/{id}  TMF921 Conformance Profile v5.0.0 - API GET Operation Conformance - For Intent Resource Each attribute Test \n\n\t\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "timedOut": null,
+                  "duration": 34,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "if (Array.isArray(response.body)) {\n  response.body.forEach(instance => {\n    if (instance.id == Cypress.env('id')) {\n      cy.log('Array if', mandatoryKeys);\n      cy.log(path, query);\n      validateMandatoryAttr(instance, mandatoryKeys);\n    }\n    // else {\n    // \tcy.log('Array else', mandatoryKeys);\n    // \tcy.log(path, query);\n    // \tvalidateMandatoryAttr(instance, mandatoryKeys);\n    // }\n  });\n} else {\n  cy.log('No Array');\n  cy.log(path, query);\n  validateMandatoryAttr(response.body, mandatoryKeys);\n}",
+                  "err": {
+                    "message": "AssertionError: expected null to deeply equal undefined",
+                    "estack": "AssertionError: expected null to deeply equal undefined\n    at eval (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:6:43)\nat Array.forEach (<anonymous>)\n    at validateMandatoryAttr (webpack://oas_ctk_gen/./cypress/support/utils/individualizatedTests.js:4:15)\n    at Context.eval (webpack://oas_ctk_gen/./cypress/e2e/production/ctk.cy.js:112:6)",
+                    "diff": null
+                  },
+                  "uuid": "9d2e7188-3e49-4ffc-8a68-e6b8889f8388",
+                  "parentUUID": "3b62f11b-148b-46a6-a5d4-eea979746f83",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "82cb7c7a-8539-43e5-bbda-364b81b92398"
+              ],
+              "failures": [
+                "84667617-874a-4661-9018-7fac6fa13a22",
+                "9d2e7188-3e49-4ffc-8a68-e6b8889f8388"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 197,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "007ecaf7-a41e-4cf5-8746-aff359bd3c63",
+          "title": "Tests method DELETE and path /intent/{id} ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "5161f64b-2e13-4e6c-8ef6-9ab10308c89e",
+              "title": "TMF921 Conformance Profile v5.0.0 - API DELETE Operation Conformance - For Intent Resource",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "fullTitle": "Tests method DELETE and path /intent/{id}  TMF921 Conformance Profile v5.0.0 - API DELETE Operation Conformance - For Intent Resource Tests status \n\n\t\t\t\tEndPoint: http://localhost:8921/tmf-api/intentManagement/v5/intent/{id}",
+                  "timedOut": null,
+                  "duration": 61,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateStatus(response.status, statusCodes);",
+                  "err": {},
+                  "uuid": "00bb8fb0-103b-4708-8e61-4445dc349fc4",
+                  "parentUUID": "5161f64b-2e13-4e6c-8ef6-9ab10308c89e",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "00bb8fb0-103b-4708-8e61-4445dc349fc4"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 61,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/json",
+        "overwrite": false,
+        "json": true,
+        "html": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "state": {
+          "expanded": true
+        }
+      },
+      "version": "6.2.0"
+    }
+  }
+}

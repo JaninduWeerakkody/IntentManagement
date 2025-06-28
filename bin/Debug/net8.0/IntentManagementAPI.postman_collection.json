@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "a8e8c8a1-3b6a-4b3a-9e3e-4b4e4a4d4a4d",
+		"name": "IntentManagementAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Generate Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"pm.collectionVariables.set(\"authToken\", jsonData.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Auth/token",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Auth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Intents",
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{authToken}}",
+						"type": "string"
+					}
+				]
+			},
+			"item": [
+				{
+					"name": "Get All Intents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Intents",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Intents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Intent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"My New Intent\",\n    \"description\": \"This is a test intent.\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Intents",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Intents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Intent By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Intents/your-intent-id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Intents",
+								"your-intent-id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Intent",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Updated Intent Name\",\n    \"description\": \"Updated description.\",\n    \"lifecycleStatus\": \"InProgress\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Intents/your-intent-id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Intents",
+								"your-intent-id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Intent",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json-patch+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"op\": \"replace\",\n        \"path\": \"/description\",\n        \"value\": \"Patched description for the intent.\"\n    }\n]"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Intents/your-intent-id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Intents",
+								"your-intent-id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Intent",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Intents/your-intent-id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Intents",
+								"your-intent-id"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://localhost:7298"
+		},
+		{
+			"key": "authToken",
+			"value": ""
+		}
+	]
+} 
