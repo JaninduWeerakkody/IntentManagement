@@ -10,4 +10,5 @@ restartPolicyMaxRetries = 3
 
 [deploy.envs]
 ASPNETCORE_ENVIRONMENT = "Production"
-ASPNETCORE_URLS = "http://0.0.0.0:8921" 
+ASPNETCORE_URLS = "http://0.0.0.0:8921"
+NIXPACKS_DOTNET_VERSION = "8.0" 

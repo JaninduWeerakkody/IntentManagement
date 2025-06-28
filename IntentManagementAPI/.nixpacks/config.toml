@@ -8,4 +8,7 @@ cmds = ["dotnet --version", "dotnet restore"]
 cmds = ["dotnet publish --no-restore -c Release -o out"]
 
 [start]
-cmd = "dotnet out/IntentManagementAPI.dll" 
+cmd = "dotnet out/IntentManagementAPI.dll"
+
+[variables]
+NIXPACKS_DOTNET_VERSION = "8.0" 
