@@ -1,0 +1,2289 @@
+conformance:
+
+  resources:
+   - IntentReport
+   - IntentSpecification
+   - Intent
+   - Hub
+   - ProbeIntent
+   - JudgeIntent
+   - BestIntent
+
+  notifications:
+   - IntentReportChangeEvent
+   - IntentAttributeValueChangeEvent
+   - IntentSpecificationDeleteEvent
+   - IntentReportDeleteEvent
+   - IntentSpecificationStatusChangeEvent
+   - IntentReportCreateEvent
+   - IntentSpecificationAttributeValueChangeEvent
+   - IntentCreateEvent
+   - IntentSpecificationCreateEvent
+   - IntentDeleteEvent
+   - IntentStatusChangeEvent
+
+  BestIntent:
+    condition: M
+    comment: ""
+    operations: {}
+    attributes:
+      '@baseType':
+        condition: ""
+        comment: ""
+      '@schemaLocation':
+        condition: ""
+        comment: ""
+      '@type':
+        condition: ""
+        comment: ""
+      attachment:
+        condition: ""
+        comment: ""
+      attachment.@baseType:
+        condition: ""
+        comment: ""
+      attachment.@referredType:
+        condition: ""
+        comment: ""
+      attachment.@schemaLocation:
+        condition: ""
+        comment: ""
+      attachment.@type:
+        condition: M
+        comment: ""
+      attachment.attachmentType:
+        condition: M
+        comment: ""
+      attachment.content:
+        condition: ""
+        comment: ""
+      attachment.description:
+        condition: ""
+        comment: ""
+      attachment.href:
+        condition: ""
+        comment: ""
+      attachment.id:
+        condition: M
+        comment: ""
+      attachment.mimeType:
+        condition: M
+        comment: ""
+      attachment.name:
+        condition: ""
+        comment: ""
+      attachment.size:
+        condition: ""
+        comment: ""
+      attachment.size.amount:
+        condition: ""
+        comment: ""
+      attachment.size.units:
+        condition: ""
+        comment: ""
+      attachment.url:
+        condition: ""
+        comment: ""
+      attachment.validFor:
+        condition: ""
+        comment: ""
+      attachment.validFor.endDateTime:
+        condition: ""
+        comment: ""
+      attachment.validFor.startDateTime:
+        condition: ""
+        comment: ""
+      characteristic:
+        condition: ""
+        comment: ""
+      characteristic.@baseType:
+        condition: ""
+        comment: ""
+      characteristic.@schemaLocation:
+        condition: ""
+        comment: ""
+      characteristic.@type:
+        condition: M
+        comment: ""
+      characteristic.characteristicRelationship:
+        condition: ""
+        comment: ""
+      characteristic.characteristicRelationship.@baseType:
+        condition: ""
+        comment: ""
+      characteristic.characteristicRelationship.@schemaLocation:
+        condition: ""
+        comment: ""
+      characteristic.characteristicRelationship.@type:
+        condition: M
+        comment: ""
+      characteristic.characteristicRelationship.id:
+        condition: M
+        comment: ""
+      characteristic.characteristicRelationship.relationshipType:
+        condition: M
+        comment: ""
+      characteristic.id:
+        condition: ""
+        comment: ""
+      characteristic.name:
+        condition: M
+        comment: ""
+      characteristic.valueType:
+        condition: ""
+        comment: ""
+      context:
+        condition: ""
+        comment: ""
+      creationDate:
+        condition: ""
+        comment: ""
+      description:
+        condition: ""
+        comment: ""
+      expression:
+        condition: ""
+        comment: ""
+      expression.@baseType:
+        condition: ""
+        comment: ""
+      expression.@schemaLocation:
+        condition: ""
+        comment: ""
+      expression.@type:
+        condition: M
+        comment: ""
+      expression.expressionLanguage:
+        condition: M
+        comment: ""
+      expression.expressionValue:
+        condition: M
+        comment: ""
+      expression.iri:
+        condition: ""
+        comment: ""
+      href:
+        condition: ""
+        comment: ""
+      id:
+        condition: ""
+        comment: ""
+      intentRelationship:
+        condition: ""
+        comment: ""
+      intentRelationship.@baseType:
+        condition: ""
+        comment: ""
+      intentRelationship.@referredType:
+        condition: M
+        comment: ""
+      intentRelationship.@schemaLocation:
+        condition: ""
+        comment: ""
+      intentRelationship.@type:
+        condition: M
+        comment: ""
+      intentRelationship.associationSpec:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.@baseType:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.@referredType:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.@schemaLocation:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.@type:
+        condition: M
+        comment: ""
+      intentRelationship.associationSpec.href:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.id:
+        condition: M
+        comment: ""
+      intentRelationship.associationSpec.name:
+        condition: ""
+        comment: ""
+      intentRelationship.href:
+        condition: ""
+        comment: ""
+      intentRelationship.id:
+        condition: M
+        comment: ""
+      intentRelationship.name:
+        condition: ""
+        comment: ""
+      intentRelationship.relationshipType:
+        condition: M
+        comment: ""
+      intentRelationship.role:
+        condition: ""
+        comment: ""
+      intentRelationship.validFor:
+        condition: ""
+        comment: ""
+      intentRelationship.validFor.endDateTime:
+        condition: ""
+        comment: ""
+      intentRelationship.validFor.startDateTime:
+        condition: ""
+        comment: ""
+      intentSpecification:
+        condition: ""
+        comment: ""
+      intentSpecification.@baseType:
+        condition: ""
+        comment: ""
+      intentSpecification.@referredType:
+        condition: ""
+        comment: ""
+      intentSpecification.@schemaLocation:
+        condition: ""
+        comment: ""
+      intentSpecification.@type:
+        condition: M
+        comment: ""
+      intentSpecification.href:
+        condition: ""
+        comment: ""
+      intentSpecification.id:
+        condition: M
+        comment: ""
+      intentSpecification.name:
+        condition: ""
+        comment: ""
+      isBundle:
+        condition: ""
+        comment: ""
+      lastUpdate:
+        condition: ""
+        comment: ""
+      lifecycleStatus:
+        condition: ""
+        comment: ""
+      name:
+        condition: ""
+        comment: ""
+      priority:
+        condition: ""
+        comment: ""
+      relatedParty:
+        condition: ""
+        comment: ""
+      relatedParty.@baseType:
+        condition: ""
+        comment: ""
+      relatedParty.@schemaLocation:
+        condition: ""
+        comment: ""
+      relatedParty.@type:
+        condition: M
+        comment: ""
+      relatedParty.partyOrPartyRole:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@baseType:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@referredType:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@schemaLocation:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@type:
+        condition: M
+        comment: ""
+      relatedParty.partyOrPartyRole.href:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.id:
+        condition: M
+        comment: ""
+      relatedParty.partyOrPartyRole.name:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.partyId:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.partyName:
+        condition: ""
+        comment: ""
+      relatedParty.role:
+        condition: M
+        comment: ""
+      statusChangeDate:
+        condition: ""
+        comment: ""
+      validFor:
+        condition: ""
+        comment: ""
+      validFor.endDateTime:
+        condition: ""
+        comment: ""
+      validFor.startDateTime:
+        condition: ""
+        comment: ""
+      version:
+        condition: ""
+        comment: ""
+    operations-details: {}
+
+  Hub:
+    condition: ""
+    comment: ""
+    operations:
+      POST:
+        condition: ""
+        comment: ""
+      DELETE:
+        condition: ""
+        comment: ""
+    attributes:
+      '@baseType':
+        condition: ""
+        comment: ""
+      '@schemaLocation':
+        condition: ""
+        comment: ""
+      '@type':
+        condition: M
+        comment: ""
+      callback:
+        condition: M
+        comment: ""
+      href:
+        condition: M (in response messages)
+        comment: ""
+      id:
+        condition: M (in response messages)
+        comment: ""
+      query:
+        condition: ""
+        comment: ""
+    operations-details:
+      POST:
+        mandatory:
+          '@type':
+            rule: ""
+          callback:
+            rule: ""
+
+  Intent:
+    condition: M
+    comment: ""
+    operations:
+      GET:
+        condition: M
+        comment: ""
+      POST:
+        condition: M
+        comment: ""
+      PATCH:
+        condition: M
+        comment: ""
+      DELETE:
+        condition: M
+        comment: ""
+    attributes:
+      '@baseType':
+        condition: ""
+        comment: ""
+      '@schemaLocation':
+        condition: ""
+        comment: ""
+      '@type':
+        condition: M
+        comment: ""
+      attachment:
+        condition: ""
+        comment: ""
+      attachment.@baseType:
+        condition: ""
+        comment: ""
+      attachment.@referredType:
+        condition: ""
+        comment: ""
+      attachment.@schemaLocation:
+        condition: ""
+        comment: ""
+      attachment.@type:
+        condition: M
+        comment: ""
+      attachment.attachmentType:
+        condition: M
+        comment: ""
+      attachment.content:
+        condition: ""
+        comment: ""
+      attachment.description:
+        condition: ""
+        comment: ""
+      attachment.href:
+        condition: ""
+        comment: ""
+      attachment.id:
+        condition: M
+        comment: ""
+      attachment.mimeType:
+        condition: M
+        comment: ""
+      attachment.name:
+        condition: ""
+        comment: ""
+      attachment.size:
+        condition: ""
+        comment: ""
+      attachment.size.amount:
+        condition: ""
+        comment: ""
+      attachment.size.units:
+        condition: ""
+        comment: ""
+      attachment.url:
+        condition: ""
+        comment: ""
+      attachment.validFor:
+        condition: ""
+        comment: ""
+      attachment.validFor.endDateTime:
+        condition: ""
+        comment: ""
+      attachment.validFor.startDateTime:
+        condition: ""
+        comment: ""
+      characteristic:
+        condition: ""
+        comment: ""
+      characteristic.@baseType:
+        condition: ""
+        comment: ""
+      characteristic.@schemaLocation:
+        condition: ""
+        comment: ""
+      characteristic.@type:
+        condition: M
+        comment: ""
+      characteristic.characteristicRelationship:
+        condition: ""
+        comment: ""
+      characteristic.characteristicRelationship.@baseType:
+        condition: ""
+        comment: ""
+      characteristic.characteristicRelationship.@schemaLocation:
+        condition: ""
+        comment: ""
+      characteristic.characteristicRelationship.@type:
+        condition: M
+        comment: ""
+      characteristic.characteristicRelationship.id:
+        condition: M
+        comment: ""
+      characteristic.characteristicRelationship.relationshipType:
+        condition: M
+        comment: ""
+      characteristic.id:
+        condition: ""
+        comment: ""
+      characteristic.name:
+        condition: M
+        comment: ""
+      characteristic.valueType:
+        condition: ""
+        comment: ""
+      context:
+        condition: ""
+        comment: ""
+      creationDate:
+        condition: ""
+        comment: ""
+      description:
+        condition: ""
+        comment: ""
+      expression:
+        condition: M
+        comment: ""
+      expression.@baseType:
+        condition: ""
+        comment: ""
+      expression.@schemaLocation:
+        condition: ""
+        comment: ""
+      expression.@type:
+        condition: M
+        comment: ""
+      expression.expressionLanguage:
+        condition: M
+        comment: ""
+      expression.expressionValue:
+        condition: M
+        comment: ""
+      expression.iri:
+        condition: ""
+        comment: ""
+      href:
+        condition: M (in response messages)
+        comment: ""
+      id:
+        condition: ""
+        comment: ""
+      intentRelationship:
+        condition: ""
+        comment: ""
+      intentRelationship.@baseType:
+        condition: ""
+        comment: ""
+      intentRelationship.@referredType:
+        condition: M
+        comment: ""
+      intentRelationship.@schemaLocation:
+        condition: ""
+        comment: ""
+      intentRelationship.@type:
+        condition: M
+        comment: ""
+      intentRelationship.associationSpec:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.@baseType:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.@referredType:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.@schemaLocation:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.@type:
+        condition: M
+        comment: ""
+      intentRelationship.associationSpec.href:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.id:
+        condition: M
+        comment: ""
+      intentRelationship.associationSpec.name:
+        condition: ""
+        comment: ""
+      intentRelationship.href:
+        condition: ""
+        comment: ""
+      intentRelationship.id:
+        condition: M
+        comment: ""
+      intentRelationship.name:
+        condition: ""
+        comment: ""
+      intentRelationship.relationshipType:
+        condition: M
+        comment: ""
+      intentRelationship.role:
+        condition: ""
+        comment: ""
+      intentRelationship.validFor:
+        condition: ""
+        comment: ""
+      intentRelationship.validFor.endDateTime:
+        condition: ""
+        comment: ""
+      intentRelationship.validFor.startDateTime:
+        condition: ""
+        comment: ""
+      intentSpecification:
+        condition: ""
+        comment: ""
+      intentSpecification.@baseType:
+        condition: ""
+        comment: ""
+      intentSpecification.@referredType:
+        condition: ""
+        comment: ""
+      intentSpecification.@schemaLocation:
+        condition: ""
+        comment: ""
+      intentSpecification.@type:
+        condition: M
+        comment: ""
+      intentSpecification.href:
+        condition: ""
+        comment: ""
+      intentSpecification.id:
+        condition: M
+        comment: ""
+      intentSpecification.name:
+        condition: ""
+        comment: ""
+      isBundle:
+        condition: ""
+        comment: ""
+      lastUpdate:
+        condition: ""
+        comment: ""
+      lifecycleStatus:
+        condition: ""
+        comment: ""
+      name:
+        condition: M
+        comment: ""
+      priority:
+        condition: ""
+        comment: ""
+      relatedParty:
+        condition: ""
+        comment: ""
+      relatedParty.@baseType:
+        condition: ""
+        comment: ""
+      relatedParty.@schemaLocation:
+        condition: ""
+        comment: ""
+      relatedParty.@type:
+        condition: M
+        comment: ""
+      relatedParty.partyOrPartyRole:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@baseType:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@referredType:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@schemaLocation:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@type:
+        condition: M
+        comment: ""
+      relatedParty.partyOrPartyRole.href:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.id:
+        condition: M
+        comment: ""
+      relatedParty.partyOrPartyRole.name:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.partyId:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.partyName:
+        condition: ""
+        comment: ""
+      relatedParty.role:
+        condition: M
+        comment: ""
+      statusChangeDate:
+        condition: ""
+        comment: ""
+      validFor:
+        condition: ""
+        comment: ""
+      validFor.endDateTime:
+        condition: ""
+        comment: ""
+      validFor.startDateTime:
+        condition: ""
+        comment: ""
+      version:
+        condition: ""
+        comment: ""
+    operations-details:
+      POST:
+        mandatory:
+          '@type':
+            rule: ""
+          expression:
+            rule: ""
+          expression.@type:
+            rule: ""
+          expression.expressionLanguage:
+            rule: ""
+          expression.expressionValue:
+            rule: ""
+          name:
+            rule: ""
+      PATCH:
+        patchable:
+          attachment:
+            rule: ""
+          characteristic:
+            rule: ""
+          context:
+            rule: ""
+          description:
+            rule: ""
+          expression:
+            rule: ""
+          intentRelationship:
+            rule: ""
+          intentSpecification:
+            rule: ""
+          isBundle:
+            rule: ""
+          lifecycleStatus:
+            rule: ""
+          name:
+            rule: ""
+          priority:
+            rule: ""
+          relatedParty:
+            rule: ""
+          validFor:
+            rule: ""
+        non-patchable:
+          '@baseType':
+            rule: '@baseType is immutable'
+          '@schemaLocation':
+            rule: ""
+          '@type':
+            rule: '@type is immutable'
+          creationDate:
+            rule: ""
+          href:
+            rule: ""
+          id:
+            rule: ""
+          lastUpdate:
+            rule: ""
+          statusChangeDate:
+            rule: ""
+          version:
+            rule: ""
+
+  IntentAttributeValueChangeEvent:
+    condition: ""
+    comment: ""
+
+  IntentCreateEvent:
+    condition: ""
+    comment: ""
+
+  IntentDeleteEvent:
+    condition: ""
+    comment: ""
+
+  IntentReport:
+    condition: M
+    comment: ""
+    operations:
+      GET:
+        condition: M
+        comment: ""
+      DELETE:
+        condition: M
+        comment: ""
+    attributes:
+      '@baseType':
+        condition: ""
+        comment: ""
+      '@schemaLocation':
+        condition: ""
+        comment: ""
+      '@type':
+        condition: M
+        comment: ""
+      creationDate:
+        condition: M
+        comment: ""
+      description:
+        condition: ""
+        comment: ""
+      expression:
+        condition: M
+        comment: ""
+      expression.@baseType:
+        condition: ""
+        comment: ""
+      expression.@schemaLocation:
+        condition: ""
+        comment: ""
+      expression.@type:
+        condition: M
+        comment: ""
+      expression.expressionLanguage:
+        condition: M
+        comment: ""
+      expression.expressionValue:
+        condition: M
+        comment: ""
+      expression.iri:
+        condition: ""
+        comment: ""
+      href:
+        condition: M (in response messages)
+        comment: ""
+      id:
+        condition: ""
+        comment: ""
+      intent:
+        condition: ""
+        comment: ""
+      intent.@baseType:
+        condition: ""
+        comment: ""
+      intent.@referredType:
+        condition: ""
+        comment: ""
+      intent.@schemaLocation:
+        condition: ""
+        comment: ""
+      intent.@type:
+        condition: ""
+        comment: ""
+      intent.attachment:
+        condition: ""
+        comment: ""
+      intent.attachment.@baseType:
+        condition: ""
+        comment: ""
+      intent.attachment.@referredType:
+        condition: ""
+        comment: ""
+      intent.attachment.@schemaLocation:
+        condition: ""
+        comment: ""
+      intent.attachment.@type:
+        condition: M
+        comment: ""
+      intent.attachment.attachmentType:
+        condition: M
+        comment: ""
+      intent.attachment.content:
+        condition: ""
+        comment: ""
+      intent.attachment.description:
+        condition: ""
+        comment: ""
+      intent.attachment.href:
+        condition: ""
+        comment: ""
+      intent.attachment.id:
+        condition: M
+        comment: ""
+      intent.attachment.mimeType:
+        condition: M
+        comment: ""
+      intent.attachment.name:
+        condition: ""
+        comment: ""
+      intent.attachment.size:
+        condition: ""
+        comment: ""
+      intent.attachment.size.amount:
+        condition: ""
+        comment: ""
+      intent.attachment.size.units:
+        condition: ""
+        comment: ""
+      intent.attachment.url:
+        condition: ""
+        comment: ""
+      intent.attachment.validFor:
+        condition: ""
+        comment: ""
+      intent.attachment.validFor.endDateTime:
+        condition: ""
+        comment: ""
+      intent.attachment.validFor.startDateTime:
+        condition: ""
+        comment: ""
+      intent.characteristic:
+        condition: ""
+        comment: ""
+      intent.characteristic.@baseType:
+        condition: ""
+        comment: ""
+      intent.characteristic.@schemaLocation:
+        condition: ""
+        comment: ""
+      intent.characteristic.@type:
+        condition: M
+        comment: ""
+      intent.characteristic.characteristicRelationship:
+        condition: ""
+        comment: ""
+      intent.characteristic.characteristicRelationship.@baseType:
+        condition: ""
+        comment: ""
+      intent.characteristic.characteristicRelationship.@schemaLocation:
+        condition: ""
+        comment: ""
+      intent.characteristic.characteristicRelationship.@type:
+        condition: M
+        comment: ""
+      intent.characteristic.characteristicRelationship.id:
+        condition: M
+        comment: ""
+      intent.characteristic.characteristicRelationship.relationshipType:
+        condition: M
+        comment: ""
+      intent.characteristic.id:
+        condition: ""
+        comment: ""
+      intent.characteristic.name:
+        condition: M
+        comment: ""
+      intent.characteristic.valueType:
+        condition: ""
+        comment: ""
+      intent.context:
+        condition: ""
+        comment: ""
+      intent.creationDate:
+        condition: ""
+        comment: ""
+      intent.description:
+        condition: ""
+        comment: ""
+      intent.expression:
+        condition: ""
+        comment: ""
+      intent.expression.@baseType:
+        condition: ""
+        comment: ""
+      intent.expression.@schemaLocation:
+        condition: ""
+        comment: ""
+      intent.expression.@type:
+        condition: M
+        comment: ""
+      intent.expression.expressionLanguage:
+        condition: M
+        comment: ""
+      intent.expression.expressionValue:
+        condition: M
+        comment: ""
+      intent.expression.iri:
+        condition: ""
+        comment: ""
+      intent.href:
+        condition: ""
+        comment: ""
+      intent.id:
+        condition: ""
+        comment: ""
+      intent.intentRelationship:
+        condition: ""
+        comment: ""
+      intent.intentRelationship.@baseType:
+        condition: ""
+        comment: ""
+      intent.intentRelationship.@referredType:
+        condition: M
+        comment: ""
+      intent.intentRelationship.@schemaLocation:
+        condition: ""
+        comment: ""
+      intent.intentRelationship.@type:
+        condition: M
+        comment: ""
+      intent.intentRelationship.associationSpec:
+        condition: ""
+        comment: ""
+      intent.intentRelationship.associationSpec.@baseType:
+        condition: ""
+        comment: ""
+      intent.intentRelationship.associationSpec.@referredType:
+        condition: ""
+        comment: ""
+      intent.intentRelationship.associationSpec.@schemaLocation:
+        condition: ""
+        comment: ""
+      intent.intentRelationship.associationSpec.@type:
+        condition: M
+        comment: ""
+      intent.intentRelationship.associationSpec.href:
+        condition: ""
+        comment: ""
+      intent.intentRelationship.associationSpec.id:
+        condition: M
+        comment: ""
+      intent.intentRelationship.associationSpec.name:
+        condition: ""
+        comment: ""
+      intent.intentRelationship.href:
+        condition: ""
+        comment: ""
+      intent.intentRelationship.id:
+        condition: M
+        comment: ""
+      intent.intentRelationship.name:
+        condition: ""
+        comment: ""
+      intent.intentRelationship.relationshipType:
+        condition: M
+        comment: ""
+      intent.intentRelationship.role:
+        condition: ""
+        comment: ""
+      intent.intentRelationship.validFor:
+        condition: ""
+        comment: ""
+      intent.intentRelationship.validFor.endDateTime:
+        condition: ""
+        comment: ""
+      intent.intentRelationship.validFor.startDateTime:
+        condition: ""
+        comment: ""
+      intent.intentSpecification:
+        condition: ""
+        comment: ""
+      intent.intentSpecification.@baseType:
+        condition: ""
+        comment: ""
+      intent.intentSpecification.@referredType:
+        condition: ""
+        comment: ""
+      intent.intentSpecification.@schemaLocation:
+        condition: ""
+        comment: ""
+      intent.intentSpecification.@type:
+        condition: M
+        comment: ""
+      intent.intentSpecification.href:
+        condition: ""
+        comment: ""
+      intent.intentSpecification.id:
+        condition: M
+        comment: ""
+      intent.intentSpecification.name:
+        condition: ""
+        comment: ""
+      intent.isBundle:
+        condition: ""
+        comment: ""
+      intent.lastUpdate:
+        condition: ""
+        comment: ""
+      intent.lifecycleStatus:
+        condition: ""
+        comment: ""
+      intent.name:
+        condition: ""
+        comment: ""
+      intent.priority:
+        condition: ""
+        comment: ""
+      intent.relatedParty:
+        condition: ""
+        comment: ""
+      intent.relatedParty.@baseType:
+        condition: ""
+        comment: ""
+      intent.relatedParty.@schemaLocation:
+        condition: ""
+        comment: ""
+      intent.relatedParty.@type:
+        condition: M
+        comment: ""
+      intent.relatedParty.partyOrPartyRole:
+        condition: ""
+        comment: ""
+      intent.relatedParty.partyOrPartyRole.@baseType:
+        condition: ""
+        comment: ""
+      intent.relatedParty.partyOrPartyRole.@referredType:
+        condition: ""
+        comment: ""
+      intent.relatedParty.partyOrPartyRole.@schemaLocation:
+        condition: ""
+        comment: ""
+      intent.relatedParty.partyOrPartyRole.@type:
+        condition: M
+        comment: ""
+      intent.relatedParty.partyOrPartyRole.href:
+        condition: ""
+        comment: ""
+      intent.relatedParty.partyOrPartyRole.id:
+        condition: M
+        comment: ""
+      intent.relatedParty.partyOrPartyRole.name:
+        condition: ""
+        comment: ""
+      intent.relatedParty.partyOrPartyRole.partyId:
+        condition: ""
+        comment: ""
+      intent.relatedParty.partyOrPartyRole.partyName:
+        condition: ""
+        comment: ""
+      intent.relatedParty.role:
+        condition: M
+        comment: ""
+      intent.statusChangeDate:
+        condition: ""
+        comment: ""
+      intent.validFor:
+        condition: ""
+        comment: ""
+      intent.validFor.endDateTime:
+        condition: ""
+        comment: ""
+      intent.validFor.startDateTime:
+        condition: ""
+        comment: ""
+      intent.version:
+        condition: ""
+        comment: ""
+      name:
+        condition: M
+        comment: ""
+      validFor:
+        condition: ""
+        comment: ""
+      validFor.endDateTime:
+        condition: ""
+        comment: ""
+      validFor.startDateTime:
+        condition: ""
+        comment: ""
+    operations-details: {}
+
+  IntentReportChangeEvent:
+    condition: ""
+    comment: ""
+
+  IntentReportCreateEvent:
+    condition: "M"
+    comment: ""
+
+  IntentReportDeleteEvent:
+    condition: ""
+    comment: ""
+
+  IntentSpecification:
+    condition: M
+    comment: ""
+    operations:
+      GET:
+        condition: M
+        comment: ""
+      POST:
+        condition: M
+        comment: ""
+      PATCH:
+        condition: M
+        comment: ""
+      DELETE:
+        condition: M
+        comment: ""
+    attributes:
+      '@baseType':
+        condition: ""
+        comment: ""
+      '@schemaLocation':
+        condition: ""
+        comment: ""
+      '@type':
+        condition: M
+        comment: ""
+      attachment:
+        condition: ""
+        comment: ""
+      attachment.@baseType:
+        condition: ""
+        comment: ""
+      attachment.@referredType:
+        condition: ""
+        comment: ""
+      attachment.@schemaLocation:
+        condition: ""
+        comment: ""
+      attachment.@type:
+        condition: M
+        comment: ""
+      attachment.attachmentType:
+        condition: M
+        comment: ""
+      attachment.content:
+        condition: ""
+        comment: ""
+      attachment.description:
+        condition: ""
+        comment: ""
+      attachment.href:
+        condition: ""
+        comment: ""
+      attachment.id:
+        condition: M
+        comment: ""
+      attachment.mimeType:
+        condition: M
+        comment: ""
+      attachment.name:
+        condition: ""
+        comment: ""
+      attachment.size:
+        condition: ""
+        comment: ""
+      attachment.size.amount:
+        condition: ""
+        comment: ""
+      attachment.size.units:
+        condition: ""
+        comment: ""
+      attachment.url:
+        condition: ""
+        comment: ""
+      attachment.validFor:
+        condition: ""
+        comment: ""
+      attachment.validFor.endDateTime:
+        condition: ""
+        comment: ""
+      attachment.validFor.startDateTime:
+        condition: ""
+        comment: ""
+      constraint:
+        condition: ""
+        comment: ""
+      constraint.@baseType:
+        condition: ""
+        comment: ""
+      constraint.@referredType:
+        condition: ""
+        comment: ""
+      constraint.@schemaLocation:
+        condition: ""
+        comment: ""
+      constraint.@type:
+        condition: M
+        comment: ""
+      constraint.href:
+        condition: ""
+        comment: ""
+      constraint.id:
+        condition: M
+        comment: ""
+      constraint.name:
+        condition: ""
+        comment: ""
+      constraint.version:
+        condition: ""
+        comment: ""
+      description:
+        condition: ""
+        comment: ""
+      entitySpecRelationship:
+        condition: ""
+        comment: ""
+      entitySpecRelationship.@baseType:
+        condition: ""
+        comment: ""
+      entitySpecRelationship.@schemaLocation:
+        condition: ""
+        comment: ""
+      entitySpecRelationship.associationSpec:
+        condition: M
+        comment: ""
+      entitySpecRelationship.associationSpec.@baseType:
+        condition: ""
+        comment: ""
+      entitySpecRelationship.associationSpec.@referredType:
+        condition: ""
+        comment: ""
+      entitySpecRelationship.associationSpec.@schemaLocation:
+        condition: ""
+        comment: ""
+      entitySpecRelationship.associationSpec.@type:
+        condition: M
+        comment: ""
+      entitySpecRelationship.associationSpec.href:
+        condition: ""
+        comment: ""
+      entitySpecRelationship.associationSpec.id:
+        condition: M
+        comment: ""
+      entitySpecRelationship.associationSpec.name:
+        condition: ""
+        comment: ""
+      entitySpecRelationship.href:
+        condition: ""
+        comment: ""
+      entitySpecRelationship.name:
+        condition: ""
+        comment: ""
+      entitySpecRelationship.relationshipType:
+        condition: M
+        comment: ""
+      entitySpecRelationship.role:
+        condition: M
+        comment: ""
+      entitySpecRelationship.validFor:
+        condition: M
+        comment: ""
+      entitySpecRelationship.validFor.endDateTime:
+        condition: ""
+        comment: ""
+      entitySpecRelationship.validFor.startDateTime:
+        condition: ""
+        comment: ""
+      expressionSpecification:
+        condition: ""
+        comment: ""
+      expressionSpecification.@baseType:
+        condition: ""
+        comment: ""
+      expressionSpecification.@schemaLocation:
+        condition: ""
+        comment: ""
+      expressionSpecification.@type:
+        condition: M
+        comment: ""
+      expressionSpecification.expressionLanguage:
+        condition: ""
+        comment: ""
+      expressionSpecification.iri:
+        condition: ""
+        comment: ""
+      href:
+        condition: M (in response messages)
+        comment: ""
+      id:
+        condition: ""
+        comment: ""
+      intentSpecRelationship:
+        condition: ""
+        comment: ""
+      intentSpecRelationship.@baseType:
+        condition: ""
+        comment: ""
+      intentSpecRelationship.@referredType:
+        condition: ""
+        comment: ""
+      intentSpecRelationship.@schemaLocation:
+        condition: ""
+        comment: ""
+      intentSpecRelationship.@type:
+        condition: M
+        comment: ""
+      intentSpecRelationship.href:
+        condition: ""
+        comment: ""
+      intentSpecRelationship.id:
+        condition: M
+        comment: ""
+      intentSpecRelationship.name:
+        condition: ""
+        comment: ""
+      intentSpecRelationship.relationshipType:
+        condition: ""
+        comment: ""
+      intentSpecRelationship.role:
+        condition: ""
+        comment: ""
+      intentSpecRelationship.validFor:
+        condition: ""
+        comment: ""
+      intentSpecRelationship.validFor.endDateTime:
+        condition: ""
+        comment: ""
+      intentSpecRelationship.validFor.startDateTime:
+        condition: ""
+        comment: ""
+      isBundle:
+        condition: ""
+        comment: ""
+      lastUpdate:
+        condition: ""
+        comment: ""
+      lifecycleStatus:
+        condition: ""
+        comment: ""
+      name:
+        condition: M
+        comment: ""
+      relatedParty:
+        condition: ""
+        comment: ""
+      relatedParty.@baseType:
+        condition: ""
+        comment: ""
+      relatedParty.@schemaLocation:
+        condition: ""
+        comment: ""
+      relatedParty.@type:
+        condition: M
+        comment: ""
+      relatedParty.partyOrPartyRole:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@baseType:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@referredType:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@schemaLocation:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@type:
+        condition: M
+        comment: ""
+      relatedParty.partyOrPartyRole.href:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.id:
+        condition: M
+        comment: ""
+      relatedParty.partyOrPartyRole.name:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.partyId:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.partyName:
+        condition: ""
+        comment: ""
+      relatedParty.role:
+        condition: M
+        comment: ""
+      specCharacteristic:
+        condition: ""
+        comment: ""
+      specCharacteristic.@baseType:
+        condition: ""
+        comment: ""
+      specCharacteristic.@schemaLocation:
+        condition: ""
+        comment: ""
+      specCharacteristic.@type:
+        condition: M
+        comment: ""
+      specCharacteristic.@valueSchemaLocation:
+        condition: ""
+        comment: ""
+      specCharacteristic.charSpecRelationship:
+        condition: ""
+        comment: ""
+      specCharacteristic.charSpecRelationship.@baseType:
+        condition: ""
+        comment: ""
+      specCharacteristic.charSpecRelationship.@schemaLocation:
+        condition: ""
+        comment: ""
+      specCharacteristic.charSpecRelationship.@type:
+        condition: M
+        comment: ""
+      specCharacteristic.charSpecRelationship.characteristicSpecificationId:
+        condition: ""
+        comment: ""
+      specCharacteristic.charSpecRelationship.name:
+        condition: M
+        comment: ""
+      specCharacteristic.charSpecRelationship.parentSpecificationHref:
+        condition: ""
+        comment: ""
+      specCharacteristic.charSpecRelationship.parentSpecificationId:
+        condition: M
+        comment: ""
+      specCharacteristic.charSpecRelationship.relationshipType:
+        condition: M
+        comment: ""
+      specCharacteristic.charSpecRelationship.validFor:
+        condition: ""
+        comment: ""
+      specCharacteristic.charSpecRelationship.validFor.endDateTime:
+        condition: ""
+        comment: ""
+      specCharacteristic.charSpecRelationship.validFor.startDateTime:
+        condition: ""
+        comment: ""
+      specCharacteristic.characteristicValueSpecification:
+        condition: ""
+        comment: ""
+      specCharacteristic.characteristicValueSpecification.@baseType:
+        condition: ""
+        comment: ""
+      specCharacteristic.characteristicValueSpecification.@schemaLocation:
+        condition: ""
+        comment: ""
+      specCharacteristic.characteristicValueSpecification.@type:
+        condition: M
+        comment: ""
+      specCharacteristic.characteristicValueSpecification.isDefault:
+        condition: ""
+        comment: ""
+      specCharacteristic.characteristicValueSpecification.rangeInterval:
+        condition: ""
+        comment: ""
+      specCharacteristic.characteristicValueSpecification.regex:
+        condition: ""
+        comment: ""
+      specCharacteristic.characteristicValueSpecification.unitOfMeasure:
+        condition: ""
+        comment: ""
+      specCharacteristic.characteristicValueSpecification.validFor:
+        condition: ""
+        comment: ""
+      specCharacteristic.characteristicValueSpecification.validFor.endDateTime:
+        condition: ""
+        comment: ""
+      specCharacteristic.characteristicValueSpecification.validFor.startDateTime:
+        condition: ""
+        comment: ""
+      specCharacteristic.characteristicValueSpecification.valueFrom:
+        condition: ""
+        comment: ""
+      specCharacteristic.characteristicValueSpecification.valueTo:
+        condition: ""
+        comment: ""
+      specCharacteristic.characteristicValueSpecification.valueType:
+        condition: ""
+        comment: ""
+      specCharacteristic.configurable:
+        condition: ""
+        comment: ""
+      specCharacteristic.description:
+        condition: ""
+        comment: ""
+      specCharacteristic.extensible:
+        condition: ""
+        comment: ""
+      specCharacteristic.id:
+        condition: ""
+        comment: ""
+      specCharacteristic.isUnique:
+        condition: ""
+        comment: ""
+      specCharacteristic.maxCardinality:
+        condition: ""
+        comment: ""
+      specCharacteristic.minCardinality:
+        condition: ""
+        comment: ""
+      specCharacteristic.name:
+        condition: M
+        comment: ""
+      specCharacteristic.regex:
+        condition: ""
+        comment: ""
+      specCharacteristic.validFor:
+        condition: ""
+        comment: ""
+      specCharacteristic.validFor.endDateTime:
+        condition: ""
+        comment: ""
+      specCharacteristic.validFor.startDateTime:
+        condition: ""
+        comment: ""
+      specCharacteristic.valueType:
+        condition: M
+        comment: ""
+      targetEntitySchema:
+        condition: ""
+        comment: ""
+      targetEntitySchema.@schemaLocation:
+        condition: M
+        comment: ""
+      targetEntitySchema.@type:
+        condition: M
+        comment: ""
+      validFor:
+        condition: ""
+        comment: ""
+      validFor.endDateTime:
+        condition: ""
+        comment: ""
+      validFor.startDateTime:
+        condition: ""
+        comment: ""
+      version:
+        condition: ""
+        comment: ""
+    operations-details:
+      POST:
+        mandatory:
+          '@type':
+            rule: ""
+          name:
+            rule: ""
+      PATCH:
+        patchable:
+          attachment:
+            rule: ""
+          constraint:
+            rule: ""
+          description:
+            rule: ""
+          entitySpecRelationship:
+            rule: ""
+          expressionSpecification:
+            rule: ""
+          intentSpecRelationship:
+            rule: ""
+          isBundle:
+            rule: ""
+          lastUpdate:
+            rule: ""
+          lifecycleStatus:
+            rule: ""
+          name:
+            rule: ""
+          relatedParty:
+            rule: ""
+          specCharacteristic:
+            rule: ""
+          targetEntitySchema:
+            rule: ""
+          validFor:
+            rule: ""
+          version:
+            rule: ""
+        non-patchable:
+          '@baseType':
+            rule: '@baseType is immutable'
+          '@schemaLocation':
+            rule: ""
+          '@type':
+            rule: '@type is immutable'
+          href:
+            rule: ""
+          id:
+            rule: ""
+          lastUpdate:
+            rule: ""
+
+  IntentSpecificationAttributeValueChangeEvent:
+    condition: ""
+    comment: ""
+
+  IntentSpecificationCreateEvent:
+    condition: ""
+    comment: ""
+
+  IntentSpecificationDeleteEvent:
+    condition: ""
+    comment: ""
+
+  IntentSpecificationStatusChangeEvent:
+    condition: ""
+    comment: ""
+
+  IntentStatusChangeEvent:
+    condition: ""
+    comment: ""
+
+  JudgeIntent:
+    condition: M
+    comment: ""
+    operations: {}
+    attributes:
+      '@baseType':
+        condition: ""
+        comment: ""
+      '@schemaLocation':
+        condition: ""
+        comment: ""
+      '@type':
+        condition: ""
+        comment: ""
+      attachment:
+        condition: ""
+        comment: ""
+      attachment.@baseType:
+        condition: ""
+        comment: ""
+      attachment.@referredType:
+        condition: ""
+        comment: ""
+      attachment.@schemaLocation:
+        condition: ""
+        comment: ""
+      attachment.@type:
+        condition: M
+        comment: ""
+      attachment.attachmentType:
+        condition: M
+        comment: ""
+      attachment.content:
+        condition: ""
+        comment: ""
+      attachment.description:
+        condition: ""
+        comment: ""
+      attachment.href:
+        condition: ""
+        comment: ""
+      attachment.id:
+        condition: M
+        comment: ""
+      attachment.mimeType:
+        condition: M
+        comment: ""
+      attachment.name:
+        condition: ""
+        comment: ""
+      attachment.size:
+        condition: ""
+        comment: ""
+      attachment.size.amount:
+        condition: ""
+        comment: ""
+      attachment.size.units:
+        condition: ""
+        comment: ""
+      attachment.url:
+        condition: ""
+        comment: ""
+      attachment.validFor:
+        condition: ""
+        comment: ""
+      attachment.validFor.endDateTime:
+        condition: ""
+        comment: ""
+      attachment.validFor.startDateTime:
+        condition: ""
+        comment: ""
+      characteristic:
+        condition: ""
+        comment: ""
+      characteristic.@baseType:
+        condition: ""
+        comment: ""
+      characteristic.@schemaLocation:
+        condition: ""
+        comment: ""
+      characteristic.@type:
+        condition: M
+        comment: ""
+      characteristic.characteristicRelationship:
+        condition: ""
+        comment: ""
+      characteristic.characteristicRelationship.@baseType:
+        condition: ""
+        comment: ""
+      characteristic.characteristicRelationship.@schemaLocation:
+        condition: ""
+        comment: ""
+      characteristic.characteristicRelationship.@type:
+        condition: M
+        comment: ""
+      characteristic.characteristicRelationship.id:
+        condition: M
+        comment: ""
+      characteristic.characteristicRelationship.relationshipType:
+        condition: M
+        comment: ""
+      characteristic.id:
+        condition: ""
+        comment: ""
+      characteristic.name:
+        condition: M
+        comment: ""
+      characteristic.valueType:
+        condition: ""
+        comment: ""
+      context:
+        condition: ""
+        comment: ""
+      creationDate:
+        condition: ""
+        comment: ""
+      description:
+        condition: ""
+        comment: ""
+      expression:
+        condition: ""
+        comment: ""
+      expression.@baseType:
+        condition: ""
+        comment: ""
+      expression.@schemaLocation:
+        condition: ""
+        comment: ""
+      expression.@type:
+        condition: M
+        comment: ""
+      expression.expressionLanguage:
+        condition: M
+        comment: ""
+      expression.expressionValue:
+        condition: M
+        comment: ""
+      expression.iri:
+        condition: ""
+        comment: ""
+      href:
+        condition: ""
+        comment: ""
+      id:
+        condition: ""
+        comment: ""
+      intentRelationship:
+        condition: ""
+        comment: ""
+      intentRelationship.@baseType:
+        condition: ""
+        comment: ""
+      intentRelationship.@referredType:
+        condition: M
+        comment: ""
+      intentRelationship.@schemaLocation:
+        condition: ""
+        comment: ""
+      intentRelationship.@type:
+        condition: M
+        comment: ""
+      intentRelationship.associationSpec:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.@baseType:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.@referredType:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.@schemaLocation:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.@type:
+        condition: M
+        comment: ""
+      intentRelationship.associationSpec.href:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.id:
+        condition: M
+        comment: ""
+      intentRelationship.associationSpec.name:
+        condition: ""
+        comment: ""
+      intentRelationship.href:
+        condition: ""
+        comment: ""
+      intentRelationship.id:
+        condition: M
+        comment: ""
+      intentRelationship.name:
+        condition: ""
+        comment: ""
+      intentRelationship.relationshipType:
+        condition: M
+        comment: ""
+      intentRelationship.role:
+        condition: ""
+        comment: ""
+      intentRelationship.validFor:
+        condition: ""
+        comment: ""
+      intentRelationship.validFor.endDateTime:
+        condition: ""
+        comment: ""
+      intentRelationship.validFor.startDateTime:
+        condition: ""
+        comment: ""
+      intentSpecification:
+        condition: ""
+        comment: ""
+      intentSpecification.@baseType:
+        condition: ""
+        comment: ""
+      intentSpecification.@referredType:
+        condition: ""
+        comment: ""
+      intentSpecification.@schemaLocation:
+        condition: ""
+        comment: ""
+      intentSpecification.@type:
+        condition: M
+        comment: ""
+      intentSpecification.href:
+        condition: ""
+        comment: ""
+      intentSpecification.id:
+        condition: M
+        comment: ""
+      intentSpecification.name:
+        condition: ""
+        comment: ""
+      isBundle:
+        condition: ""
+        comment: ""
+      lastUpdate:
+        condition: ""
+        comment: ""
+      lifecycleStatus:
+        condition: ""
+        comment: ""
+      name:
+        condition: ""
+        comment: ""
+      priority:
+        condition: ""
+        comment: ""
+      relatedParty:
+        condition: ""
+        comment: ""
+      relatedParty.@baseType:
+        condition: ""
+        comment: ""
+      relatedParty.@schemaLocation:
+        condition: ""
+        comment: ""
+      relatedParty.@type:
+        condition: M
+        comment: ""
+      relatedParty.partyOrPartyRole:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@baseType:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@referredType:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@schemaLocation:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@type:
+        condition: M
+        comment: ""
+      relatedParty.partyOrPartyRole.href:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.id:
+        condition: M
+        comment: ""
+      relatedParty.partyOrPartyRole.name:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.partyId:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.partyName:
+        condition: ""
+        comment: ""
+      relatedParty.role:
+        condition: M
+        comment: ""
+      statusChangeDate:
+        condition: ""
+        comment: ""
+      validFor:
+        condition: ""
+        comment: ""
+      validFor.endDateTime:
+        condition: ""
+        comment: ""
+      validFor.startDateTime:
+        condition: ""
+        comment: ""
+      version:
+        condition: ""
+        comment: ""
+    operations-details: {}
+
+  ProbeIntent:
+    condition: M
+    comment: ""
+    operations: {}
+    attributes:
+      '@baseType':
+        condition: ""
+        comment: ""
+      '@schemaLocation':
+        condition: ""
+        comment: ""
+      '@type':
+        condition: ""
+        comment: ""
+      attachment:
+        condition: ""
+        comment: ""
+      attachment.@baseType:
+        condition: ""
+        comment: ""
+      attachment.@referredType:
+        condition: ""
+        comment: ""
+      attachment.@schemaLocation:
+        condition: ""
+        comment: ""
+      attachment.@type:
+        condition: M
+        comment: ""
+      attachment.attachmentType:
+        condition: M
+        comment: ""
+      attachment.content:
+        condition: ""
+        comment: ""
+      attachment.description:
+        condition: ""
+        comment: ""
+      attachment.href:
+        condition: ""
+        comment: ""
+      attachment.id:
+        condition: M
+        comment: ""
+      attachment.mimeType:
+        condition: M
+        comment: ""
+      attachment.name:
+        condition: ""
+        comment: ""
+      attachment.size:
+        condition: ""
+        comment: ""
+      attachment.size.amount:
+        condition: ""
+        comment: ""
+      attachment.size.units:
+        condition: ""
+        comment: ""
+      attachment.url:
+        condition: ""
+        comment: ""
+      attachment.validFor:
+        condition: ""
+        comment: ""
+      attachment.validFor.endDateTime:
+        condition: ""
+        comment: ""
+      attachment.validFor.startDateTime:
+        condition: ""
+        comment: ""
+      characteristic:
+        condition: ""
+        comment: ""
+      characteristic.@baseType:
+        condition: ""
+        comment: ""
+      characteristic.@schemaLocation:
+        condition: ""
+        comment: ""
+      characteristic.@type:
+        condition: M
+        comment: ""
+      characteristic.characteristicRelationship:
+        condition: ""
+        comment: ""
+      characteristic.characteristicRelationship.@baseType:
+        condition: ""
+        comment: ""
+      characteristic.characteristicRelationship.@schemaLocation:
+        condition: ""
+        comment: ""
+      characteristic.characteristicRelationship.@type:
+        condition: M
+        comment: ""
+      characteristic.characteristicRelationship.id:
+        condition: M
+        comment: ""
+      characteristic.characteristicRelationship.relationshipType:
+        condition: M
+        comment: ""
+      characteristic.id:
+        condition: ""
+        comment: ""
+      characteristic.name:
+        condition: M
+        comment: ""
+      characteristic.valueType:
+        condition: ""
+        comment: ""
+      context:
+        condition: ""
+        comment: ""
+      creationDate:
+        condition: ""
+        comment: ""
+      description:
+        condition: ""
+        comment: ""
+      expression:
+        condition: ""
+        comment: ""
+      expression.@baseType:
+        condition: ""
+        comment: ""
+      expression.@schemaLocation:
+        condition: ""
+        comment: ""
+      expression.@type:
+        condition: M
+        comment: ""
+      expression.expressionLanguage:
+        condition: M
+        comment: ""
+      expression.expressionValue:
+        condition: M
+        comment: ""
+      expression.iri:
+        condition: ""
+        comment: ""
+      href:
+        condition: ""
+        comment: ""
+      id:
+        condition: ""
+        comment: ""
+      intentRelationship:
+        condition: ""
+        comment: ""
+      intentRelationship.@baseType:
+        condition: ""
+        comment: ""
+      intentRelationship.@referredType:
+        condition: M
+        comment: ""
+      intentRelationship.@schemaLocation:
+        condition: ""
+        comment: ""
+      intentRelationship.@type:
+        condition: M
+        comment: ""
+      intentRelationship.associationSpec:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.@baseType:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.@referredType:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.@schemaLocation:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.@type:
+        condition: M
+        comment: ""
+      intentRelationship.associationSpec.href:
+        condition: ""
+        comment: ""
+      intentRelationship.associationSpec.id:
+        condition: M
+        comment: ""
+      intentRelationship.associationSpec.name:
+        condition: ""
+        comment: ""
+      intentRelationship.href:
+        condition: ""
+        comment: ""
+      intentRelationship.id:
+        condition: M
+        comment: ""
+      intentRelationship.name:
+        condition: ""
+        comment: ""
+      intentRelationship.relationshipType:
+        condition: M
+        comment: ""
+      intentRelationship.role:
+        condition: ""
+        comment: ""
+      intentRelationship.validFor:
+        condition: ""
+        comment: ""
+      intentRelationship.validFor.endDateTime:
+        condition: ""
+        comment: ""
+      intentRelationship.validFor.startDateTime:
+        condition: ""
+        comment: ""
+      intentSpecification:
+        condition: ""
+        comment: ""
+      intentSpecification.@baseType:
+        condition: ""
+        comment: ""
+      intentSpecification.@referredType:
+        condition: ""
+        comment: ""
+      intentSpecification.@schemaLocation:
+        condition: ""
+        comment: ""
+      intentSpecification.@type:
+        condition: M
+        comment: ""
+      intentSpecification.href:
+        condition: ""
+        comment: ""
+      intentSpecification.id:
+        condition: M
+        comment: ""
+      intentSpecification.name:
+        condition: ""
+        comment: ""
+      isBundle:
+        condition: ""
+        comment: ""
+      lastUpdate:
+        condition: ""
+        comment: ""
+      lifecycleStatus:
+        condition: ""
+        comment: ""
+      name:
+        condition: ""
+        comment: ""
+      priority:
+        condition: ""
+        comment: ""
+      relatedParty:
+        condition: ""
+        comment: ""
+      relatedParty.@baseType:
+        condition: ""
+        comment: ""
+      relatedParty.@schemaLocation:
+        condition: ""
+        comment: ""
+      relatedParty.@type:
+        condition: M
+        comment: ""
+      relatedParty.partyOrPartyRole:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@baseType:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@referredType:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@schemaLocation:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.@type:
+        condition: M
+        comment: ""
+      relatedParty.partyOrPartyRole.href:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.id:
+        condition: M
+        comment: ""
+      relatedParty.partyOrPartyRole.name:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.partyId:
+        condition: ""
+        comment: ""
+      relatedParty.partyOrPartyRole.partyName:
+        condition: ""
+        comment: ""
+      relatedParty.role:
+        condition: M
+        comment: ""
+      statusChangeDate:
+        condition: ""
+        comment: ""
+      validFor:
+        condition: ""
+        comment: ""
+      validFor.endDateTime:
+        condition: ""
+        comment: ""
+      validFor.startDateTime:
+        condition: ""
+        comment: ""
+      version:
+        condition: ""
+        comment: ""
+    operations-details: {}
